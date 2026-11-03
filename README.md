@@ -71,6 +71,14 @@ diyagramlar.
 
 ▶ [Örnek video: ilk 60 sn (16:9)](docs/media/stickstory.mp4)
 
+### 🖍️ MS Paint çöp adam — `stickman`
+
+MS Paint ile çizilmiş gibi büyük kafalı çöp adamlar, komik tarih ve bilim anlatımları, 2–3 saniyede bir yeni resim.
+
+<p align="center"><img src="docs/media/stickman.gif" width="480" alt="stickman stili"></p>
+
+▶ [Örnek video: "Market kapalı" (9 sn, 16:9)](docs/media/stickman.mp4)
+
 ### 🖊️ dmscales whiteboard — `custom-dmscales` (özel stil)
 
 Beyaz sayfa, kelimesi gelince "pat" diye çıkan italik yazı, kırmızı anahtar kelimeler, marker çöp adam figürleri. @dmscales
