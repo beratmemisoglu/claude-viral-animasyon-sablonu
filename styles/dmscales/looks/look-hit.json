@@ -1,0 +1,12 @@
+{
+  "schema": 2,
+  "kind": "look",
+  "id": "look-hit",
+  "style": "custom-dmscales",
+  "name": "Hit",
+  "description": "Bold italic lines on a #fcfcfc page, as in the channel's two most-viewed videos.",
+  "settings": {
+    "era": "hits"
+  },
+  "pitfalls": []
+}

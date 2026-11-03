@@ -1,0 +1,10 @@
+{
+  "schema": 2,
+  "kind": "look",
+  "id": "look-default",
+  "style": "custom-dmscales",
+  "name": "Clean",
+  "description": "Regular italic narration lines on the white page: the channel's later look.",
+  "settings": {},
+  "pitfalls": []
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 2,
+  "kind": "style",
+  "id": "custom-dmscales",
+  "name": "Dmscales",
+  "tagline": "Whiteboard explainers: italic type that pops on the word, red keywords, marker figures",
+  "description": "Fast, plain explainers on a flat white page: Arial italic lines centred on one axis that pop in on the spoken word, one or two red keywords per line, colon headers with lists that build, asterisk footnotes, hand-drawn marker figures, crowds and red arrows, and real screenshots dropped in flat. Hard cuts on clause starts, about one new thing every second, no camera moves.",
+  "base": "starter",
+  "from": {
+    "style": "starter",
+    "engineVersion": 1
+  },
+  "version": 1,
+  "created": "2026-11-01T05:52:40Z",
+  "dim": "2d",
+  "aspects": [
+    "16:9",
+    "9:16"
+  ],
+  "controls": {
+    "keep": [],
+    "add": [
+      {
+        "path": "era",
+        "label": "Era",
+        "type": "select",
+        "default": "later",
+        "help": "Which period of the channel to match: its later videos (regular italic lines on a #ffffff page) or its two most-viewed videos (bold italic lines on a #fcfcfc page).",
+        "options": [
+          {
+            "value": "later",
+            "label": "Later videos: regular italic, white page"
+          },
+          {
+            "value": "hits",
+            "label": "The hits: bold italic, #fcfcfc page"
+          }
+        ]
+      }
+    ],
+    "remove": []
+  },
+  "defaults": {
+    "dim": "2d",
+    "theme": "dmscales",
+    "captions": {
+      "on": false,
+      "size": 56
+    },
+    "post": {
+      "grain": 0,
+      "vignette": 0,
+      "contrast": 1,
+      "desat": 0,
+      "warmth": 0
+    },
+    "camera": {
+      "push": 0,
+      "punch": 0,
+      "fov": 40
+    },
+    "transitions": {
+      "duration": 0.28
+    }
+  },
+  "capabilities": {
+    "needsImageKey": false
+  },
+  "banned": [
+    "Math.random(",
+    "Date.now(",
+    "performance.now("
+  ],
+  "prompts": {
+    "brief": "Dmscales: fast whiteboard explainers on a flat white page. The narration's words pop in as Arial italic lines on the spoken word with 1-2 red keywords; colon headers grow lists; asterisk footnotes; marker figures, crowds and red arrows; the member's real screenshots and video clips as proof. Hard cuts, no camera moves.",
+    "build": "Build the video in two steps. STEP 1, the direction: read skill/DIRECTION.md and skill/STYLE_GUIDE.md, run skill/scripts/add_media.mjs for any of the member's screenshots or clips not yet in assets/media/media.json, look at every file, then write edit-plan.md (one block per narration clause: template, verbatim say, screen text with {red} markup, media + mark, footnote, what pops on which word) and summarise it in the chat. STEP 2, the scenes: one scenes/*.js file per section, built only with models.js (say, pops, words, heading, figure, crowd, bust, mark, media, clip, stack, enter, leave, move, P, T) and the templates in STYLE_GUIDE.md, every event cued on its spoken word, trans 'cut' for ~85 % of shots, S.noCamera = true. Never draw a stand-in for a screenshot or a real number. Sound per skill/SOUND.md: write audio/beds.json (one music bed from 0 to the end, gain -30), no effects, never S.add / S.line / S.arrow. Something must be on screen within 0.25 s of every cut (cut on the word the first thing shows). Check each file, then look at frames at every entrance.",
+    "context": "Dmscales project: read skill/STYLE_GUIDE.md (templates, palette, type, motion) and edit-plan.md (this video's edit plan) before any change. Changes go into edit-plan.md first, then into the scene files. Media come from assets/media/media.json (add new files with skill/scripts/add_media.mjs); type is say() markup: {red} {g:green} _underline_ **bold**.",
+    "qualityBar": "A finished frame: pure white page, every line Arial italic centred on the axis, 1-2 red words, nothing under 26 px, nothing cut or overlapping by accident, the member's picture or clip shown flat (no border, no shadow) with a red mark on the part that matters, pops landing on their spoken word, a new thing about every second, no shot held over 6 s.",
+    "reframe": "9:16: stack what 16:9 puts side by side (picture or figure above, its line below), never side by side; keep every number in reference px through P() (it scales sizes 0.75, type 0.9 and spreads positions 1.15x vertically); phone clips h 1000; lists and definition cards stay centred on the axis.",
+    "imageStyle": "",
+    "ignoreBaseRefs": [
+      "references/sound_design.md"
+    ]
+  }
+}

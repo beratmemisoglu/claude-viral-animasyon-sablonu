@@ -1,0 +1,15 @@
+{
+  "name": "WHATIF-NARRATOR (Türkçe erkek anlatıcı — KULLANICI SEÇECEK)",
+  "voice_id": "PUT_VOICE_ID_HERE",
+  "model_id": "eleven_multilingual_v2",
+  "note": "Türkçe için eleven_multilingual_v2 (kararlı, timestamps destekler) veya eleven_v3 (daha ifadeli, Türkçe destekli; with-timestamps v3'te garanti değil → tts_segments.py otomatik fallback yapar). Ses listesi: python tts_segments.py --list-voices (anahtar yazdırılmaz). Kullanıcı onayı olmadan voice_id değiştirilmez.",
+  "language_code": "tr",
+  "output_format": "mp3_44100_128",
+  "styles": {
+    "narrator": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": true, "speed": 1.0},
+    "hook": {"stability": 0.4, "similarity_boost": 0.8, "style": 0.55, "use_speaker_boost": true, "speed": 0.95},
+    "calm": {"stability": 0.65, "similarity_boost": 0.8, "style": 0.2, "use_speaker_boost": true, "speed": 0.95}
+  },
+  "gap_sec": 0.35,
+  "loudnorm": "I=-16:TP=-1.5:LRA=9"
+}

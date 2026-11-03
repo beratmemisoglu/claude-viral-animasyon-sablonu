@@ -1,0 +1,332 @@
+{
+ "slug": "case-001-pudding-guy",
+ "case_no": 1,
+ "series": "Beat the House",
+ "title": "The Pudding That Paid for Free Flights",
+ "archetype": "SY",
+ "hook_type": "H1",
+ "fact_flag": "G",
+ "rubric_score": 9,
+ "highlight": [
+  "twenty-five",
+  "million"
+ ],
+ "sources": [
+  {
+   "claim": "In 1999 civil engineer David Phillips bought 12,150 cups of Healthy Choice pudding during a frequent-flyer promotion",
+   "url": "https://www.snopes.com/fact-check/pudding-on-the-ritz/",
+   "url2": "https://en.wikipedia.org/wiki/David_Phillips_(entrepreneur)"
+  },
+  {
+   "claim": "He spent about $3,140 and received about 1,253,000 miles",
+   "url": "https://www.cnn.com/TRANSCRIPTS/0001/26/tod.10.html",
+   "url2": "https://en.wikipedia.org/wiki/David_Phillips_(entrepreneur)"
+  },
+  {
+   "claim": "Offer: 500 miles per 10 barcodes; early entries earned a bonus",
+   "url": "https://www.snopes.com/fact-check/pudding-on-the-ritz/",
+   "url2": "https://www.ucdavis.edu/news/engineer-finds-sweet-travel-deal-cups-pudding"
+  },
+  {
+   "claim": "Pudding was donated to the Salvation Army and food banks, whose volunteers removed the labels",
+   "url": "https://www.snopes.com/fact-check/pudding-on-the-ritz/",
+   "url2": "https://www.npr.org/2000/01/29/1069750/frequent-flyer"
+  },
+  {
+   "claim": "Airlines sell miles to promotional partners for about two cents a mile",
+   "url": "https://www.snopes.com/fact-check/pudding-on-the-ritz/",
+   "url2": "https://viewfromthewing.com/?p=196381"
+  }
+ ],
+ "lines": [
+  {
+   "n": 1,
+   "beat": "hook",
+   "text": "In 1999, an engineer bought twelve thousand cups of chocolate pudding, and he never planned to eat one.",
+   "pause_after": 0.45,
+   "shot": [
+    {
+     "noun": "chocolate pudding cup",
+     "setting": "extreme close-up on a conveyor belt",
+     "time": "evening",
+     "action": "one pudding cup slides past, then dozens more pile up",
+     "camera": "pull_out",
+     "transition": "whip"
+    },
+    {
+     "noun": "mountain of pudding cups",
+     "setting": "a 1999 American supermarket checkout, fluorescent lights",
+     "time": "evening",
+     "action": "a lanky engineer with glasses pushes a shopping cart overflowing with chocolate pudding cups toward a shocked cashier",
+     "camera": "push_in",
+     "transition": "dissolve"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "beat": "reaction",
+   "text": "The cashier thought he was crazy.",
+   "pause_after": 0.15,
+   "shot": {
+    "noun": "cashier",
+    "setting": "supermarket checkout lane",
+    "time": "evening",
+    "action": "the cashier stares wide-eyed at the conveyor belt full of pudding cups",
+    "camera": "push_in",
+    "transition": "whip"
+   }
+  },
+  {
+   "n": 3,
+   "beat": "rule",
+   "text": "You see, the pudding company had printed a deal on every package. Send in ten barcodes, get five hundred frequent flyer miles.",
+   "pause_after": 0.35,
+   "shot": [
+    {
+     "noun": "barcode on a pudding package",
+     "setting": "kitchen table",
+     "time": "warm lamp light",
+     "action": "",
+     "camera": "iris",
+     "transition": "dissolve",
+     "sign": "10 BARCODES = 500 MILES",
+     "clause": true
+    },
+    {
+     "noun": "frequent flyer miles offer",
+     "setting": "kitchen table",
+     "time": "warm lamp light",
+     "action": "Clause the raccoon inspector reads the offer on the package, eyes widening",
+     "camera": "push_in",
+     "transition": "dissolve",
+     "sign": "500 MILES",
+     "clause": true
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "beat": "objection",
+   "text": "But wait, pudding? Why not frozen dinners or soup?",
+   "pause_after": 0.15,
+   "shot": {
+    "noun": "frozen dinners and soup cans",
+    "setting": "grocery aisle with price tags",
+    "time": "evening",
+    "action": "the engineer compares a frozen dinner and a soup can, unimpressed",
+    "camera": "truck",
+    "transition": "dissolve"
+   }
+  },
+  {
+   "n": 5,
+   "beat": "false_alarm",
+   "text": "He checked. Everything else cost dollars, not cents.",
+   "pause_after": 0.12,
+   "shot": {
+    "noun": "price tags",
+    "setting": "grocery aisle",
+    "time": "evening",
+    "action": "big price tags reading $2.99 and $3.49",
+    "camera": "push_in",
+    "transition": "whip"
+   }
+  },
+  {
+   "n": 6,
+   "beat": "ladder",
+   "text": "Then, in a discount store, he found the pudding cups. Twenty-five cents each.",
+   "pause_after": 0.45,
+   "shot": {
+    "noun": "pudding cups on a clearance shelf",
+    "setting": "a dim discount store aisle",
+    "time": "night",
+    "action": "the engineer freezes in front of a shelf of pudding cups under a glowing 25 cent sign",
+    "camera": "push_in",
+    "transition": "dissolve",
+    "sign": "25¢"
+   }
+  },
+  {
+   "n": 7,
+   "beat": "ladder",
+   "text": "So he bought one cart. Then ten carts. Then every cup in every store across town.",
+   "pause_after": 0.12,
+   "shot": [
+    {
+     "noun": "shopping cart full of pudding",
+     "setting": "store parking lot",
+     "time": "night",
+     "action": "the engineer pushes one cart, then a train of ten carts",
+     "camera": "truck",
+     "transition": "whip"
+    },
+    {
+     "noun": "map of town with store pins",
+     "setting": "town map",
+     "time": "",
+     "action": "pudding cup icons pop up on every store on a town map",
+     "camera": "overhead",
+     "transition": "dissolve"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "beat": "counter_clue",
+   "text": "\"Sir, are you opening a restaurant?\" a manager asked. \"Something like that.\"",
+   "pause_after": 0.2,
+   "shot": {
+    "noun": "store manager",
+    "setting": "store loading dock",
+    "time": "night",
+    "action": "a suspicious store manager in a red vest questions the engineer next to stacked pudding boxes",
+    "camera": "push_in",
+    "transition": "dissolve"
+   }
+  },
+  {
+   "n": 9,
+   "beat": "ladder",
+   "text": "Now he had twelve thousand puddings and a deadline. Peeling every barcode himself would take forever.",
+   "pause_after": 0.5,
+   "shot": {
+    "noun": "garage stacked with pudding",
+    "setting": "suburban garage packed floor to ceiling with pudding boxes",
+    "time": "night",
+    "action": "the engineer sits exhausted holding one peeled barcode",
+    "camera": "pull_out",
+    "transition": "whip"
+   }
+  },
+  {
+   "n": 10,
+   "beat": "twist",
+   "text": "So he drove the pudding to the Salvation Army. Their volunteers peeled the labels, and they got to keep the pudding.",
+   "pause_after": 0.35,
+   "shot": {
+    "noun": "volunteers peeling labels",
+    "setting": "a busy charity warehouse",
+    "time": "daylight",
+    "action": "a long table of cheerful volunteers peeling barcodes off pudding cups into a bucket",
+    "camera": "truck",
+    "transition": "dissolve"
+   }
+  },
+  {
+   "n": 11,
+   "beat": "mechanism",
+   "text": "You see, the airlines had already sold those miles to the pudding company for about two cents each, so his barcodes were already paid for.",
+   "pause_after": 0.15,
+   "shot": [
+    {
+     "noun": "miles flowing from airline to pudding company",
+     "setting": "cutaway diagram of an airline office connected by pipes to a pudding factory",
+     "time": "",
+     "action": "",
+     "camera": "cutaway",
+     "transition": "dissolve",
+     "sign": "2¢ PER MILE"
+    },
+    {
+     "noun": "two-cent coin",
+     "setting": "close-up of a two-cent price tag on a stack of airline miles certificates",
+     "time": "",
+     "action": "",
+     "camera": "iris",
+     "transition": "dissolve",
+     "sign": "2¢ EACH"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "beat": "mechanism",
+   "text": "And because he mailed them early, a bonus doubled everything.",
+   "pause_after": 0.4,
+   "shot": {
+    "noun": "mailbox stuffed with envelopes",
+    "setting": "street mailbox",
+    "time": "morning",
+    "action": "envelopes of barcodes burst out of a mailbox",
+    "camera": "push_in",
+    "transition": "whip",
+    "sign": "EARLY BONUS x2"
+   }
+  },
+  {
+   "n": 13,
+   "beat": "payoff",
+   "text": "Three thousand dollars of pudding became one point two five million miles.",
+   "pause_after": 0.3,
+   "shot": {
+    "noun": "airplane and a pudding cup",
+    "setting": "sunny sky above the clouds",
+    "time": "golden hour",
+    "action": "the engineer relaxes in a first-class seat holding a single pudding cup, a jet soaring",
+    "camera": "pull_out",
+    "transition": "dissolve",
+    "sign": "1,250,000 MILES"
+   }
+  },
+  {
+   "n": 14,
+   "beat": "payoff",
+   "text": "Send this to your friend who never reads the fine print.",
+   "pause_after": 0.3,
+   "shot": {
+    "noun": "fine print",
+    "setting": "close-up of a pudding package label",
+    "time": "",
+    "action": "",
+    "camera": "iris",
+    "transition": "dissolve",
+    "clause": true
+   }
+  },
+  {
+   "n": 15,
+   "beat": "verdict",
+   "text": "Legal? Completely. Smart? Clause says: approved.",
+   "pause_after": 0.2,
+   "shot": {
+    "noun": "red APPROVED stamp on case file",
+    "setting": "Clause's cluttered detective office",
+    "time": "lamp light",
+    "action": "Clause the raccoon inspector slams a red APPROVED stamp onto a manila folder labeled CASE #001",
+    "camera": "push_in",
+    "transition": "dissolve",
+    "clause": true,
+    "sign": "CASE #001"
+   }
+  },
+  {
+   "n": 16,
+   "beat": "payoff",
+   "text": "Would you have bought twelve thousand puddings?",
+   "pause_after": 0.2,
+   "shot": {
+    "noun": "Clause holding a pudding cup",
+    "setting": "Clause's detective office",
+    "time": "lamp light",
+    "action": "Clause raises one eyebrow and holds up a pudding cup to the camera",
+    "camera": "push_in",
+    "transition": "dissolve",
+    "clause": true
+   }
+  }
+ ],
+ "devices": {
+  "comment": [
+   "personal_bargain",
+   "pinned_answer"
+  ],
+  "send": "identity_tag",
+  "meme_word": "twelve thousand"
+ },
+ "closing": {
+  "verdict": "approved",
+  "teaser": "Case #002: the lifetime plane ticket an airline regretted"
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "competitors": [
+    {"handle": "@dayonefilmsofficial", "name": "Day One Films", "main": true},
+    {"handle": "@IfverseTales", "name": "Ifverse Tales"},
+    {"handle": "@lastsoulorigin", "name": "Last Soul Origin"},
+    {"handle": "@cheslimpico", "name": "cheslimpico"},
+    {"handle": "@littlewarsfilms", "name": "Little Wars Films"},
+    {"handle": "@innerwarfilms", "name": "Inner War Films"},
+    {"handle": "@Madness_Paint", "name": "Madness Paint"},
+    {"handle": "@PointlessFiction", "name": "Pointless Fiction"},
+    {"handle": "@IfHumans", "name": "If Humans"}
+  ],
+  "our_channel_id": "UC8ZbaLnm4_r2gx02QD4k55g",
+  "videos_per_channel": 50,
+  "thumbs_to_download": 12
+}

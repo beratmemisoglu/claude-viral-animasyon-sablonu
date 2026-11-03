@@ -1,0 +1,176 @@
+{
+ "title": "Dmscales",
+ "style": "custom-dmscales",
+ "language": "en",
+ "end": 18,
+ "timeline": "audio/timeline.json",
+ "scenes": [
+  "sample"
+ ],
+ "images": {
+  "test_shot": "assets/media/test_shot.png",
+  "test_clip_0": "assets/media/test_clip/0000.jpg",
+  "test_clip_1": "assets/media/test_clip/0001.jpg",
+  "test_clip_2": "assets/media/test_clip/0002.jpg",
+  "test_clip_3": "assets/media/test_clip/0003.jpg",
+  "test_clip_4": "assets/media/test_clip/0004.jpg",
+  "test_clip_5": "assets/media/test_clip/0005.jpg",
+  "test_clip_6": "assets/media/test_clip/0006.jpg",
+  "test_clip_7": "assets/media/test_clip/0007.jpg",
+  "test_clip_8": "assets/media/test_clip/0008.jpg",
+  "test_clip_9": "assets/media/test_clip/0009.jpg",
+  "test_clip_10": "assets/media/test_clip/0010.jpg",
+  "test_clip_11": "assets/media/test_clip/0011.jpg",
+  "test_clip_12": "assets/media/test_clip/0012.jpg",
+  "test_clip_13": "assets/media/test_clip/0013.jpg",
+  "test_clip_14": "assets/media/test_clip/0014.jpg",
+  "test_clip_15": "assets/media/test_clip/0015.jpg",
+  "test_clip_16": "assets/media/test_clip/0016.jpg",
+  "test_clip_17": "assets/media/test_clip/0017.jpg",
+  "test_clip_18": "assets/media/test_clip/0018.jpg",
+  "test_clip_19": "assets/media/test_clip/0019.jpg",
+  "test_clip_20": "assets/media/test_clip/0020.jpg",
+  "test_clip_21": "assets/media/test_clip/0021.jpg",
+  "test_clip_22": "assets/media/test_clip/0022.jpg",
+  "test_clip_23": "assets/media/test_clip/0023.jpg",
+  "test_clip_24": "assets/media/test_clip/0024.jpg",
+  "test_clip_25": "assets/media/test_clip/0025.jpg",
+  "test_clip_26": "assets/media/test_clip/0026.jpg",
+  "test_clip_27": "assets/media/test_clip/0027.jpg",
+  "test_clip_28": "assets/media/test_clip/0028.jpg",
+  "test_clip_29": "assets/media/test_clip/0029.jpg",
+  "test_clip_30": "assets/media/test_clip/0030.jpg",
+  "test_clip_31": "assets/media/test_clip/0031.jpg",
+  "test_clip_32": "assets/media/test_clip/0032.jpg",
+  "test_clip_33": "assets/media/test_clip/0033.jpg",
+  "test_clip_34": "assets/media/test_clip/0034.jpg",
+  "test_clip_35": "assets/media/test_clip/0035.jpg",
+  "test_clip_36": "assets/media/test_clip/0036.jpg",
+  "test_clip_37": "assets/media/test_clip/0037.jpg",
+  "test_clip_38": "assets/media/test_clip/0038.jpg",
+  "test_clip_39": "assets/media/test_clip/0039.jpg",
+  "test_clip_40": "assets/media/test_clip/0040.jpg",
+  "test_clip_41": "assets/media/test_clip/0041.jpg",
+  "test_clip_42": "assets/media/test_clip/0042.jpg",
+  "test_clip_43": "assets/media/test_clip/0043.jpg",
+  "test_clip_44": "assets/media/test_clip/0044.jpg"
+ },
+ "previewAudio": "audio/clean.wav",
+ "settings": {
+  "format": "landscape",
+  "dim": "2d",
+  "theme": "base",
+  "captions": {
+   "on": true,
+   "size": 56
+  },
+  "post": {
+   "grain": 0.035,
+   "vignette": 0.12,
+   "contrast": 1,
+   "desat": 0,
+   "warmth": 0
+  },
+  "camera": {
+   "push": 0.04,
+   "punch": 0.02,
+   "fov": 40
+  },
+  "transitions": {
+   "duration": 0.4
+  },
+  "quality": {
+   "ss": null,
+   "shadows": true
+  }
+ },
+ "views": {
+  "sample": {
+   "scenes": [
+    "sample"
+   ],
+   "end": 18
+  },
+  "hero": {
+   "scenes": [
+    "hero"
+   ],
+   "end": 6
+  },
+  "kit": {
+   "scenes": [
+    "kit"
+   ],
+   "end": 40
+  },
+  "mustfail_overlap": {
+   "scenes": [
+    "mustfail_overlap"
+   ],
+   "end": 3,
+   "expect": "overlap"
+  },
+  "mustfail_cut": {
+   "scenes": [
+    "mustfail_cut"
+   ],
+   "end": 3,
+   "expect": "cut"
+  },
+  "mustfail_small": {
+   "scenes": [
+    "mustfail_small"
+   ],
+   "end": 3,
+   "expect": "small"
+  },
+  "mustfail_dark": {
+   "scenes": [
+    "mustfail_dark"
+   ],
+   "end": 3,
+   "expect": "DARK"
+  },
+  "motion": {
+   "scenes": [
+    "motion"
+   ],
+   "end": 14
+  },
+  "templates": {
+   "scenes": [
+    "templates"
+   ],
+   "end": 22.5
+  },
+  "mustfail_red": {
+   "scenes": [
+    "mustfail_red"
+   ],
+   "end": 3,
+   "expect": "RED"
+  },
+  "mustfail_page": {
+   "scenes": [
+    "mustfail_page"
+   ],
+   "end": 3,
+   "expect": "PAGE"
+  },
+  "mustfail_hold": {
+   "scenes": [
+    "mustfail_hold"
+   ],
+   "end": 8,
+   "expect": "HOLD"
+  },
+  "mustfail_void": {
+   "scenes": [
+    "mustfail_void"
+   ],
+   "end": 3,
+   "expect": "VOID"
+  }
+ },
+ "view": "sample"
+}

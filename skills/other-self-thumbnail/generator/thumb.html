@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Thumbnail Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Baloo+2:wght@800&family=Nunito:wght@900&display=block" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+  #stage { width: 1280px; height: 720px; transform-origin: 0 0; }
+  #stage svg { display: block; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="hero-rig.js"></script>
+<script src="thumb.js"></script>
+<script>
+  // Inline config wins only when no URL params are given. Example request (see README for the JSON schema):
+  window.THUMB_CONFIG = window.THUMB_CONFIG || { preset: 'bedClock' };
+  const urlCfg = THUMB.configFromURL();
+  const cfg = Object.keys(urlCfg).length ? urlCfg : window.THUMB_CONFIG;
+  const stage = document.getElementById('stage');
+  const scale = +(new URLSearchParams(location.search).get('scale') || 1);   // ?scale=0.25 → 320×180 preview
+  if (scale !== 1) { stage.style.transform = `scale(${scale})`; }
+  // render once immediately, again when the web font is ready (text is measured, so it must re-fit)
+  THUMB.render(cfg, stage);
+  document.fonts.load(`700 100px "${cfg.font || 'Fredoka'}"`).then(() => document.fonts.ready).then(() => {
+    THUMB.render(cfg, stage);
+    document.body.setAttribute('data-ready', '1');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+ "name": "Second Self - Solitude",
+ "voice_id": "PL7EYPTnZppHWj5yLiVI",
+ "model_id": "eleven_v3",
+ "note": "The Other Self channel voice of the shadow twin (latest ElevenLabs voice, chosen by the user 2026-10-15). Never change without the user's OK.",
+ "styles": {
+  "whisper": {"stability": 0.35, "similarity_boost": 0.9, "style": 0.6, "speed": 0.85},
+  "taunt": {"stability": 0.3, "similarity_boost": 0.9, "style": 0.75, "speed": 0.9},
+  "boss": {"stability": 0.25, "similarity_boost": 0.9, "style": 0.9, "speed": 0.8}
+ }
+}

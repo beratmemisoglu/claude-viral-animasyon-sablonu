@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "whatif-shots.schema.json",
+  "title": "What If — shots.json (shot list)",
+  "description": "Senaryo + timeline.json'dan LLM'in ürettiği, Remotion WhatIfFilm.tsx'in okuduğu shot listesi. Zamanlar saniye (float), kare değil. Shot'lar bitişik ve çakışmasız olmalı; her shot'ın VO segmenti timeline.json'da bulunmalı.",
+  "type": "object",
+  "required": ["slug", "shots"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "title": {"type": "string"},
+    "fps": {"type": "integer", "enum": [25, 30], "default": 30},
+    "profile": {"enum": ["A", "B"], "default": "A", "description": "Kurgu ritmi profili (references/05 §2): A hızlı hikâye 18–26 kesme/dk, B anlatı 8–13 kesme/dk. Video boyunca sabit."},
+    "shots": {
+      "type": "array", "minItems": 1,
+      "items": {"$ref": "#/$defs/shot"}
+    }
+  },
+  "$defs": {
+    "label": {
+      "type": "object", "additionalProperties": false,
+      "description": "Kafa üstü etiket. kind verilmezse: icon→icon, value→number, text→text.",
+      "properties": {
+        "kind": {"enum": ["number", "text", "icon"]},
+        "text": {"type": "string", "maxLength": 18},
+        "value": {"type": "number"},
+        "from": {"type": "number", "description": "sayaç başlangıcı (count-up)"},
+        "unit": {"type": "string", "maxLength": 6},
+        "icon": {"enum": ["heart", "money", "skull", "clock", "eye", "lie", "star"]},
+        "tone": {"enum": ["good", "bad", "neutral", "accent", "gold"], "default": "accent"},
+        "appear": {"type": "integer", "minimum": 0, "description": "shot içi kare (lokal)"},
+        "countDur": {"type": "integer", "minimum": 1},
+        "decimals": {"type": "integer", "minimum": 0, "maximum": 2}
+      }
+    },
+    "character": {
+      "type": "object", "required": ["id", "pose", "x"], "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string"},
+        "pose": {"enum": ["stand", "walk", "run", "sit", "point", "phone", "armsUp", "slump"]},
+        "expr": {"enum": ["neutral", "happy", "sad", "shocked", "angry", "worried"], "default": "neutral"},
+        "x": {"type": "number", "minimum": -200, "maximum": 2120},
+        "y": {"type": "number", "description": "zemin y; varsayılan FLOOR=820"},
+        "scale": {"type": "number", "minimum": 0.3, "maximum": 4, "default": 1.25},
+        "facing": {"enum": [1, -1], "default": 1},
+        "hero": {"type": "boolean", "description": "izleyici = 'sen'; turuncu atkı"},
+        "color": {"type": "string"},
+        "label": {"$ref": "#/$defs/label"},
+        "move": {"type": "object", "required": ["to"], "additionalProperties": false, "properties": {"to": {"type": "number"}, "ease": {"enum": ["linear", "inOut"]}}},
+        "poseAt": {"type": "array", "items": {"type": "object", "required": ["at", "pose"], "additionalProperties": false, "properties": {"at": {"type": "integer", "minimum": 0}, "pose": {"enum": ["stand", "walk", "run", "sit", "point", "phone", "armsUp", "slump"]}, "expr": {"enum": ["neutral", "happy", "sad", "shocked", "angry", "worried"]}}}}
+      }
+    },
+    "crowd": {
+      "type": "object", "required": ["n"], "additionalProperties": false,
+      "properties": {
+        "n": {"type": "integer", "minimum": 1, "maximum": 40},
+        "walk": {"type": "boolean"},
+        "x": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "depth": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "exclude": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2, "description": "kahramanın x aralığı; kalabalık buraya girmez"},
+        "labelEvery": {"type": "integer", "minimum": 1},
+        "appear": {"type": "integer", "minimum": 0},
+        "labels": {
+          "type": "object", "required": ["kind"], "additionalProperties": false,
+          "properties": {
+            "kind": {"enum": ["number", "text", "icon"]},
+            "values": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+            "texts": {"type": "array", "items": {"type": "string", "maxLength": 14}},
+            "icons": {"type": "array", "items": {"enum": ["heart", "money", "skull", "clock", "eye", "lie", "star"]}},
+            "tones": {"type": "array", "items": {"enum": ["good", "bad", "neutral", "accent", "gold"]}},
+            "unit": {"type": "string"},
+            "decimals": {"type": "integer", "minimum": 0, "maximum": 2}
+          }
+        }
+      }
+    },
+    "camera": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "type": {"enum": ["static", "push", "pull", "pan"], "default": "push"},
+        "rate": {"type": "number", "minimum": 0, "maximum": 0.05, "description": "ölçek/sn; LBS ölçümü 0.010–0.026"},
+        "zoom": {"type": "number", "minimum": 0.5, "maximum": 3},
+        "from": {"type": "number"}, "to": {"type": "number"},
+        "origin": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2}
+      }
+    },
+    "card": {
+      "type": "object", "required": ["kind", "title"], "additionalProperties": false,
+      "description": "scene=infocard için lacivert infografik kart (references/05 §4). counter = sayı şoku, bars = Normal vs SEN, grid = N kişiden kaçı.",
+      "properties": {
+        "kind": {"enum": ["counter", "bars", "grid"]},
+        "title": {"type": "string", "maxLength": 40},
+        "value": {"type": "number"},
+        "from": {"type": "number"},
+        "unit": {"type": "string", "maxLength": 10},
+        "caption": {"type": "string", "maxLength": 60},
+        "total": {"type": "integer", "minimum": 1, "maximum": 60},
+        "items": {"type": "array", "maxItems": 4, "items": {"type": "object", "required": ["label", "value"], "additionalProperties": false, "properties": {"label": {"type": "string", "maxLength": 14}, "value": {"type": "number"}, "tone": {"enum": ["good", "bad", "neutral", "accent", "gold"]}}}},
+        "source": {"type": "string", "maxLength": 90},
+        "countDur": {"type": "integer", "minimum": 1}
+      }
+    },
+    "overlay": {
+      "type": "object", "required": ["text"], "additionalProperties": false,
+      "properties": {
+        "text": {"type": "string", "maxLength": 60},
+        "kind": {"enum": ["card", "title", "lower", "counter"], "default": "card"},
+        "sub": {"type": "string", "maxLength": 80},
+        "at": {"type": "integer", "minimum": 0}, "dur": {"type": "integer", "minimum": 6}
+      }
+    },
+    "shot": {
+      "type": "object", "required": ["id", "t_start", "dur", "scene"], "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^s[0-9]{2,3}[a-z]?$"},
+        "t_start": {"type": "number", "minimum": 0},
+        "dur": {"type": "number", "minimum": 0.8, "maximum": 20, "description": "references/05 §2: profil A medyan 1.7–3.0 sn, profil B 3.9–5.5 sn; >10 sn plan yalnız duygusal zirvede ve kamera/etiket/overlay değişimiyle"},
+        "scene": {"enum": ["street", "office", "home", "school", "transit", "wedding", "infocard"]},
+        "card": {"$ref": "#/$defs/card"},
+        "night": {"type": "boolean"},
+        "boardText": {"type": "string", "maxLength": 24},
+        "trans": {"enum": ["cut", "dip", "fade"], "default": "cut"},
+        "characters": {"type": "array", "items": {"$ref": "#/$defs/character"}, "maxItems": 6},
+        "crowd": {"$ref": "#/$defs/crowd"},
+        "camera": {"$ref": "#/$defs/camera"},
+        "overlay": {"oneOf": [{"$ref": "#/$defs/overlay"}, {"type": "array", "items": {"$ref": "#/$defs/overlay"}, "maxItems": 3}]},
+        "sfx": {"type": "array", "items": {"type": "object", "required": ["name", "at"], "additionalProperties": false, "properties": {"name": {"enum": ["pop", "whoosh", "ding", "thud", "tick", "crowd", "riser"]}, "at": {"type": "integer", "minimum": 0}, "gain": {"type": "number", "minimum": 0, "maximum": 2}}}},
+        "vo_segment": {"type": ["string", "null"], "description": "timeline.json segment id; null = sessiz shot"}
+      }
+    }
+  }
+}

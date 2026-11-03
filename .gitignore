@@ -1,0 +1,31 @@
+# the engine's own files: setup_from_app.py copies them from YOUR install. Never commit them.
+appcore/main/
+appcore/node_modules/
+appcore/pipeline-scripts/
+templates/
+kit/
+blender/
+
+# private: the app's data (settings, Google Flow sign-in, speech models), local paths, keys
+appdata/
+studio.json
+.mcp.json
+.render-chrome/
+.trash/
+secrets*.json
+*.env
+.env*
+
+# style kit engine parts (third-party) and builds
+styles/*/engine.js
+styles/*/lib/
+styles/*/vendor/
+styles/*/.cz/
+styles/*/out/
+styles/*/review/
+dist/
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

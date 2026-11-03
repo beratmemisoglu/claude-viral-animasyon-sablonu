@@ -1,0 +1,8 @@
+﻿[
+  {"id": "procrastination-a", "preset": "bedClock", "text": "TOMORROW.", "props": {"clock": "8:47"}, "expression": "shocked"},
+  {"id": "discipline-style-a", "preset": "bedClock", "text": "DAY 1.", "props": {"clock": "5:00"}, "expression": "glare"},
+  {"id": "comfortzone-a", "preset": "doorLight", "text": "STAY.", "expression": "anxious"},
+  {"id": "overthinking-a", "preset": "phoneBed", "text": "3:07 AM.", "expression": "tired"},
+  {"id": "scrolling-twin-b", "preset": "phoneBed", "text": "ONE MORE.", "expression": "tired", "twin": {"x": 1090, "y": 760, "scale": 1.0, "opacity": 0.85, "mood": "smug", "facing": -1}}
+]
+

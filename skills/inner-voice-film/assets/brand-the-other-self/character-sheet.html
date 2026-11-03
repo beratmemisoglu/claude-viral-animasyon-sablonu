@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Other Self — Character Sheet</title>
+<style>
+  :root { --bg:#0B0B0B; --panel:#121212; --line:#2A2A2A; --text:#E8E4D8; --muted:#8A8A8A; --accent:#E8463A; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:"Comic Sans MS","Comic Relief",cursive; }
+  header { padding:28px 32px 8px; }
+  h1 { margin:0; font-size:40px; letter-spacing:.02em; }
+  h1 u { text-decoration:none; border-bottom:5px solid var(--accent); }
+  p.sub { color:var(--muted); margin:6px 0 0; font-size:15px; }
+  section { margin:18px 32px; background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px 16px 6px; }
+  h2 { margin:0 0 6px; font-size:19px; font-weight:700; color:#cfcabb; }
+  .note { color:var(--muted); font-size:13px; margin:0 0 6px; }
+  svg { width:100%; height:auto; display:block; }
+  .lbl { fill:#8A8A8A; font-size:15px; font-family:"Comic Sans MS","Comic Relief",cursive; }
+  .swatches { display:flex; flex-wrap:wrap; gap:10px; padding:4px 0 10px; }
+  .sw { display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); }
+  .sw i { width:28px; height:28px; border-radius:8px; border:1px solid #333; display:inline-block; }
+</style>
+</head>
+<body>
+<header>
+  <h1>THE <u>OTHER</u> SELF</h1>
+  <p class="sub">Ana karakter + gölge ikizi · tek kaynak: hero-rig.js (Remotion'a birebir taşınır)</p>
+</header>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="glowWide" x="-60%" y="-40%" width="220%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="glowRim" x="-40%" y="-30%" width="180%" height="160%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="eyeGlow" x="-100%" y="-200%" width="300%" height="500%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="vig" cx="50%" cy="48%" r="70%">
+      <stop offset="0" stop-color="#141414"/><stop offset=".6" stop-color="#0D0D0D"/><stop offset="1" stop-color="#060606"/>
+    </radialGradient>
+  </defs>
+</svg>
+
+<section>
+  <h2>1 · Kahraman ve öteki benliği</h2>
+  <p class="note">İmza: büyük ay-kafa + tepedeki filiz + dikey oval gözler + ince mürekkep kontur. Gölge aynı silüet — aynı filiz — ama içi boş siyah ve elektrik mavisi yanıyor.</p>
+  <svg id="hero" viewBox="0 0 1200 560"></svg>
+</section>
+
+<section>
+  <h2>2 · Görünüşler</h2>
+  <svg id="turn" viewBox="0 0 1200 460"></svg>
+</section>
+
+<section>
+  <h2>3 · İfade kütüphanesi</h2>
+  <p class="note">İfadeler tek karede değişir (sınırlı animasyon). Kaşlar her ifadede aynı yapıda, istenirse morph edilebilir.</p>
+  <svg id="faces" viewBox="0 0 1200 640"></svg>
+</section>
+
+<section>
+  <h2>4 · Pozlar</h2>
+  <svg id="poses" viewBox="0 0 1200 480"></svg>
+</section>
+
+<section>
+  <h2>5 · Gölgenin hikâye boyunca boyu</h2>
+  <svg id="scale" viewBox="0 0 1200 560"></svg>
+</section>
+
+<section>
+  <h2>6 · Yatak (sadece kafa) ve dönüşüm sembolü örneği</h2>
+  <svg id="bed" viewBox="0 0 1200 380"></svg>
+</section>
+
+<section>
+  <h2>7 · Renkler</h2>
+  <div class="swatches" id="sw"></div>
+</section>
+
+<script src="hero-rig.js"></script>
+<script>
+  const { hero, POSES, EXPR, STYLES } = TOS;
+  const HERO = { body: STYLES.moon.body, ink: STYLES.moon.ink, sweat: '#A9CFF2', blush: '#E9A99C' };
+  const SHADOW = STYLES.moon.shadow;
+  const bg = (w, h) => `<rect width="${w}" height="${h}" fill="url(#vig)"/>`;
+  const floor = (y, w) => `<path d="M 0 ${y} L ${w} ${y}" stroke="#8E8E8E" stroke-width="2.5" stroke-linecap="round"/>`;
+  const label = (x, y, t) => `<text class="lbl" x="${x}" y="${y}" text-anchor="middle">${t}</text>`;
+
+  // 1 hero + twin
+  document.getElementById('hero').innerHTML = bg(1200, 560) + floor(470, 1200) +
+    hero({ pose: POSES.standing, expression: 'neutral', x: 400, y: 470, scale: 1.25 }) +
+    hero({ pose: POSES.standing, x: 800, y: 470, scale: 1.25, facing: -1, shadow: { mood: 'smug' } }) +
+    label(400, 520, 'kahraman') + label(800, 520, 'öteki benlik (gölge)');
+
+  // 2 turnaround-ish
+  document.getElementById('turn').innerHTML = bg(1200, 460) + floor(380, 1200) +
+    hero({ pose: POSES.front, expression: 'neutral', q: 0, x: 250, y: 380, scale: 1.0 }) +
+    hero({ pose: POSES.standing, expression: 'neutral', q: 0.8, x: 600, y: 380, scale: 1.0 }) +
+    hero({ pose: POSES.standing, expression: 'neutral', q: 0.8, facing: -1, x: 950, y: 380, scale: 1.0 }) +
+    label(250, 430, 'önden') + label(600, 430, 'sağa dönük (varsayılan)') + label(950, 430, 'sola dönük (ayna)');
+
+  // 3 expression grid (head close-ups)
+  const names = Object.keys(EXPR);
+  let fg = bg(1200, 640);
+  names.forEach((n, i) => {
+    const col = i % 5, row = Math.floor(i / 5);
+    const x = 120 + col * 240, y = 135 + row * 200;
+    fg += hero({ mode: 'headOnly', expression: n, x, y, scale: 1.0 }) + label(x, y + 82, n);
+  });
+  document.getElementById('faces').innerHTML = fg;
+
+  // 4 poses
+  const plist = [['sad', 'sad', 'üzgün'], ['walk', 'neutral', 'yürüyüş'], ['run', 'determined', 'koşu'], ['guard', 'straining', 'gard'],
+                 ['punch', 'straining', 'yumruk'], ['sitEdge', 'confident', 'yatak kenarı'], ['curled', 'crying', 'dip noktası']];
+  let pg = bg(1200, 480) + floor(400, 1200);
+  plist.forEach(([p, e, t], i) => {
+    const x = 90 + i * 160;
+    pg += hero({ pose: POSES[p], expression: e, x, y: 400, scale: 0.78, token: (p === 'run' || p === 'punch' || p === 'guard') ? 'headband' : null }) + label(x, 450, t);
+  });
+  document.getElementById('poses').innerHTML = pg;
+
+  // 5 shadow scale curve
+  let sg = bg(1200, 560) + floor(500, 1200);
+  [[1.1, 'kanepe 1.1×', 'smug'], [1.2, 'masa 1.2×', 'slit'], [2.5, 'boss 2.5×', 'slit'], [0.5, 'final 0.5×', 'sad']].forEach(([s, t, m], i) => {
+    const x = [140, 330, 820, 1080][i];
+    sg += hero({ pose: POSES.standing, x, y: 500, scale: 0.5 * s, facing: -1, shadow: { mood: m } }) + label(x, 540, t);
+  });
+  sg += hero({ pose: POSES.determined, expression: 'determined', x: 560, y: 500, scale: 0.5, token: 'headband' }) + label(560, 540, 'kahraman 1×');
+  document.getElementById('scale').innerHTML = sg;
+
+  // 6 bed + token
+  document.getElementById('bed').innerHTML = bg(1200, 380) +
+    `<rect x="160" y="210" width="560" height="44" rx="22" fill="#2A2A2E" stroke="#6B6B6B" stroke-width="3"/>` +
+    `<ellipse cx="250" cy="206" rx="78" ry="18" fill="#4A4A50"/>` +
+    `<path d="M 330 254 C 330 190 420 180 520 186 C 620 180 700 196 712 254 Z" fill="#2B3247" stroke="#6D7593" stroke-width="3"/>` +
+    hero({ mode: 'headOnly', expression: 'asleep', x: 262, y: 170, scale: 0.95 }) +
+    floor(330, 1200) +
+    hero({ pose: POSES.sitEdge, expression: 'confident', x: 960, y: 330, scale: 0.85, token: 'headband' }) +
+    label(440, 300, 'yatakta: sadece kafa') + label(960, 365, 'dönüşüm sembolü (DISCIPLINE örneği: bant)');
+
+  // 7 swatches
+  const sw = [['gövde', HERO.body], ['mürekkep', HERO.ink], ['ter', HERO.sweat], ['yanak', HERO.blush],
+              ['gölge', SHADOW.fill], ['gölge parıltı', SHADOW.glow], ['gölge kenar', SHADOW.rim], ['gölge göz', SHADOW.eye], ['sahne', '#0B0B0B']];
+  document.getElementById('sw').innerHTML = sw.map(([n, c]) => `<span class="sw"><i style="background:${c}"></i>${n} ${c}</span>`).join('');
+</script>
+</body>
+</html>

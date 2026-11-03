@@ -1,0 +1,11 @@
+{
+ "name": "",
+ "voice_id": "CHOOSE_ME",
+ "model_id": "eleven_multilingual_v2",
+ "note": "Narrator voice for the animated Reels account. The voice choice is the user's decision: run `tts.py --list-voices \"energetic american male storyteller\"`, let the user listen and pick, then set voice_id + name. Do NOT reuse inner-voice-film/voice.json (another channel's locked voice).",
+ "styles": {
+  "narrator": {"stability": 0.4, "similarity_boost": 0.85, "style": 0.45, "use_speaker_boost": true, "speed": 1.12},
+  "dialogue": {"stability": 0.35, "similarity_boost": 0.85, "style": 0.7, "use_speaker_boost": true, "speed": 1.1},
+  "verdict": {"stability": 0.45, "similarity_boost": 0.85, "style": 0.55, "use_speaker_boost": true, "speed": 1.05}
+ }
+}

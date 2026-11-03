@@ -1,0 +1,2 @@
+## Sample
+When you upload a new video, the first thing that happens is YouTube shows it to a tiny test group. This is called the test pool. If those viewers watch it, it gets pushed out to more people. If they swipe away, it dies right there. To pass the test, you need a hook in the first second, one clear idea, but most importantly, retention. Because every viewer only wants one thing: a reason to keep watching.
