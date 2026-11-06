@@ -17,7 +17,7 @@ library (nothing built-in, nothing synthesized); off = no effects at all. The In
 import hashlib, json, os, random, re, subprocess
 import numpy as np
 
-B0, B1 = '--- sound effect credits (kept up to date by Creatorize) ---', '--- end of sound effect credits ---'
+B0, B1 = '--- sound effect credits (kept up to date by berat) ---', '--- end of sound effect credits ---'
 HERE = os.path.dirname(os.path.abspath(__file__))
 BUILTIN = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'lowpoly', 'library', 'sfx'))
 
