@@ -1,4 +1,4 @@
-// Load the engine's own main-process code (appcore/main/index.js, copied from its app.asar) as a library,
+// Load the engine's own main-process code (appcore/main/index.js) as a library,
 // without Electron and without starting the app: `electron` is a stand-in whose app never becomes ready (so no window, no
 // server, no updater starts), pointed at Toon Studio's own folders. The app's functions are then called directly - its
 // project setup, CLAUDE.md writer, build instructions, crew agents and Claude tools - so Toon Studio says and does exactly

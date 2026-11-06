@@ -1,12 +1,11 @@
 # Toon Studio: penceresiz animasyon stüdyosu
 
-Bu klasör animasyon motorunun ana kodunu (`appcore/main/index.js`, `python setup_from_app.py` ile senin
-kurulumundan kopyalanır) bir kütüphane olarak çalıştırır: proje kurulumu, CLAUDE.md yazıcısı, seslendirme, temizleme ve
+Bu klasör animasyon motorunun ana kodunu (`appcore/main/index.js`) bir kütüphane olarak çalıştırır: proje kurulumu, CLAUDE.md yazıcısı, seslendirme, temizleme ve
 zamanlama, ses tasarımı, miks, dışa aktarma, Claude görev çalıştırıcısı (istemler, ekip ajanları, hook'lar, araçlar) ve
 tüm Claude araçları. Sadece uygulamanın penceresi değiştirildi: gizli render pencereleri headless Chrome sayfalarıdır
 (`appcore/load.cjs`). Yani burada yapılan video, her stilde, uygulamadakiyle birebir aynı şekilde yapılır.
 
-`appcore/main/index.js` ya da `templates/` yoksa önce `python setup_from_app.py` çalıştır.
+İlk kurulumda `python setup_from_app.py` çalıştır: veri klasörünü (Flow profili, konuşma modelleri, Blender) bağlar ve studio.json yazar.
 
 ## Video yapmak (uygulamanın akışı, adım adım)
 
@@ -58,7 +57,7 @@ web_image, lowpoly_asset, enrich_frame, library_* ...). Önce projenin kendi CLA
 - `appcore/`: uygulamanın kodu (kurulumdan) + `load.cjs` (Electron'un yerine geçen) + `cli.cjs` + `mcp.cjs` + `fixes.cjs`
   (her cli komutunun projenin engine.js'ine uyguladığı düzeltmeler: export'ta "OperationError: Encoding error" için
   stickstory/toon encoder yedeği); `appdata/` uygulamanın veri klasörü (config.json: ses, müzik, Claude, araç yolları);
-  `templates/` stil motorları ve skill'ler (kurulumdan).
+  `templates/` stil motorları ve skill'ler.
 - Google Flow (ücretsiz görseller): uygulamanın Flow Chrome profili, appdata/flow-chrome'a bağlı. Giriş ya da robot
   kontrolü gerekirse sahibi `python studio.py flow-open` çalıştırıp o pencerede kendisi tamamlar (asla onun yerine yapma).
 - Anahtarlar dosyadan değil, ortam değişkenlerinden gelir: ELEVENLABS_API_KEY, HIGGSFIELD_API_KEY, FAL_KEY,

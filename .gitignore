@@ -1,8 +1,9 @@
-# the engine's own files: setup_from_app.py copies them from YOUR install. Never commit them.
-appcore/main/
-appcore/node_modules/
-appcore/pipeline-scripts/
-templates/
+# large binary assets not in the repo — run setup_from_app.py for these
+templates/blender/
+templates/lowpoly/
+templates/viral-anim-research/
+templates/gorebilseydin-brand/
+templates/gorebilseydin-videos/
 kit/
 blender/
 
