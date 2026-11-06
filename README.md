@@ -4,8 +4,6 @@
 sahne animasyon → müzik/efekt → MP4. 12 farklı animasyon stili, viral kanallardan tersine mühendislikle çıkarılmış
 12 Claude skill'i ve özel bir whiteboard stili (dmscales) içerir.
 
-> **Not:** Render motoru bu repoda yok; kurulum betiği onu bilgisayarındaki lisanslı kurulumdan alır (bkz.
-> [Kurulum](#kurulum)).
 
 <p align="center">
   <img src="docs/media/blender.gif" height="300" alt="Blender 3D cartoon">
@@ -116,7 +114,6 @@ açıklayıcılarından ölçülerek çıkarıldı (bkz. [Özel stil: dmscales](
 
 | | |
 |---|---|
-| **Lisanslı motor kurulumu** | Kurulu ve en az bir kez açılmış olmalı (motorlar buradan kopyalanır) |
 | **Claude Code** | `claude` komutu çalışır durumda, giriş yapılmış |
 | **Node.js ≥ 22** | motor `node:sqlite` kullanır |
 | **Python 3.10+** | + `pip install pillow` |
@@ -127,28 +124,25 @@ açıklayıcılarından ölçülerek çıkarıldı (bkz. [Özel stil: dmscales](
 ### Adımlar
 
 ```bash
-git clone https://github.com/beratmemisoglu79-dotcom/claude-viral-animasyon-sablonu.git toon-studio
+git clone https://github.com/beratmemisoglu/claude-viral-animasyon-sablonu.git berat-studio
 ```
 
 ```bash
-cd toon-studio
+cd berat-studio
 ```
 
 ```bash
-python setup_from_app.py --app "<kurulumun resources klasörü>" --data "<kurulumun veri klasörü>"
+python setup_from_app.py --data "<veri klasörü>"
 ```
 
-- `--app`: `app.asar` ve `templates/` klasörünün olduğu `resources` klasörü.
 - `--data`: ayarların (`config.json`), Flow profilinin ve konuşma modellerinin olduğu veri klasörü.
 - `--workspace` (isteğe bağlı): projelerin tutulacağı klasör, varsayılan `~/ToonStudio-Projects`.
 
 `setup_from_app.py` şunları yapar:
 
-1. Senin kurulumundan motor kodunu (`appcore/main/index.js`), `node_modules` ve `pipeline-scripts`'i çıkarır.
-2. Stil motorlarını ve skill'lerini (`templates/`) kopyalar.
-3. Veri klasöründen ayarlarını (`appdata/config.json`: ses, müzik, Claude), Google Flow profilini, konuşma
+1. Veri klasöründen ayarlarını (`appdata/config.json`: ses, müzik, Claude), Google Flow profilini, konuşma
    modellerini ve Blender'ı bağlar.
-4. `studio.json` (Python, Chrome, çalışma alanı yolu) ve `.mcp.json` (suite MCP sunucusu) dosyalarını yazar.
+2. `studio.json` (Python, Chrome, çalışma alanı yolu) ve `.mcp.json` (suite MCP sunucusu) dosyalarını yazar.
 
 ### API anahtarları
 
@@ -306,7 +300,7 @@ python studio.py run algoritma build
 
 ```
 ├── studio.py              komut satırı (python studio.py help)
-├── setup_from_app.py      motor parçalarını SENİN kurulumundan kopyalar
+├── setup_from_app.py      veri klasörünü bağlar, studio.json yazar
 ├── CLAUDE.md              Claude Code için akış talimatları
 ├── appcore/
 │   ├── load.cjs           Electron yerine geçen yükleyici (headless Chrome, nativeImage, ortam değişkeni anahtarları)
@@ -319,8 +313,7 @@ python studio.py run algoritma build
 └── docs/media/            README örnek görselleri ve videoları
 ```
 
-Kurulumdan sonra eklenenler (git'e girmez): `appcore/main/`, `appcore/node_modules/`, `appcore/pipeline-scripts/`,
-`templates/`, `appdata/`, `studio.json`, `.mcp.json`.
+Kurulumdan sonra eklenenler (git'e girmez): `appdata/`, `studio.json`, `.mcp.json`.
 
 ---
 
@@ -328,13 +321,18 @@ Kurulumdan sonra eklenenler (git'e girmez): `appcore/main/`, `appcore/node_modul
 
 | Yok | Neden |
 |---|---|
-| Render motorunun kodu, `templates/`, Style Kit motoru | üçüncü tarafa ait; `setup_from_app.py` senin lisanslı kurulumundan kopyalar |
+| `templates/blender/`, `templates/lowpoly/` ve diğer büyük asset klasörleri | 100 MB üstü; Git LFS gerektirirdi |
 | Blender | 400 MB; ayrıca kurulur |
+| Style Kit motoru (`styles/*/engine.js`, `lib/`, `vendor/`) | üçüncü tarafa ait |
 | `appdata/` (ayarlar, Google Flow girişi, konuşma modelleri) | kişisel ve gizli |
 | API anahtarları | sadece ortam değişkenlerinde |
 | Analiz edilen kanalların videoları, transkriptleri, thumbnail'leri | onların malı; skill'lerde sadece analizler var |
 
 ## Lisans
 
-Bu repodaki kendi kodumuz, skill'ler ve dokümanlar [MIT](LICENSE). Kurulumda kopyalanan motor ve Style Kit kendi
-şartlarına tabidir.
+Bu repo [MIT Lisansı](LICENSE) ile yayınlanmıştır.
+
+**Ticari kullanım ve dağıtım dahil her türlü kullanıma açıktır**: kopyalayabilir, değiştirebilir, satabilir,
+dağıtabilir, kendi ürünlerinize gömebilirsiniz; tek koşul LICENSE dosyasındaki telif hakkı bildiriminin korunmasıdır.
+
+Style Kit motoru (`styles/*/engine.js`, `lib/`, `vendor/`) kendi şartlarına tabidir.
