@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "solution.any.order-of-work",
   "uid": "4193a207-3e52-50e1-ae59-26471e021432",
@@ -62,7 +62,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#34, rec 8",
@@ -72,7 +72,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "loop 7",
@@ -84,7 +84,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

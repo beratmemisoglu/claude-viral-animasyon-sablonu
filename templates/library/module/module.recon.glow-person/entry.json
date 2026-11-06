@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.recon.glow-person",
   "uid": "5b3e00a5-504e-55ce-aa2d-b5959836335f",
@@ -142,7 +142,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

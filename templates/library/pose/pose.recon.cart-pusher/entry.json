@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.cart-pusher",
   "uid": "bf90c9fe-e2ed-5b4b-acdf-4f37f656411e",
@@ -86,7 +86,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

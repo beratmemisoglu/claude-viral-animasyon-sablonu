@@ -1,4 +1,4 @@
-# 3D Informational (Zack D Like)
+﻿# 3D Informational (Zack D Like)
 keywords: 3d informational, zack d, zack d films, informational, megaproject, engineering, what if, explainer, realistic, realistic 3d, blender, eevee, x-ray, green highlight, camera, mount everest, install blender, slow export, quality, standard, verified, ultraedit
 platforms: both
 
@@ -28,7 +28,7 @@ light when the playhead rests. Click a machine or object to select it for Claude
 
 ## Installing Blender
 
-Creatorize installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
+berat installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
 once): **Install Blender** in New project, or by itself when you create the project. **Mac**: Blender 5.2 needs a Mac
 with Apple silicon (M1 or newer).
 

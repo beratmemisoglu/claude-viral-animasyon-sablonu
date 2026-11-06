@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.any.wood-grain-direction",
   "uid": "98eeafa5-86d4-520a-a7eb-be880311f3ea",
@@ -60,7 +60,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
       "lines": "#8",
@@ -72,7 +72,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

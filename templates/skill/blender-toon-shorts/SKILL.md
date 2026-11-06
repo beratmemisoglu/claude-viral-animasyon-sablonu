@@ -1,6 +1,6 @@
----
+﻿---
 name: blender-toon-shorts
-description: Build 3D cartoon shorts in Creatorize Suite with the Blender engine - our own big-headed toon characters with drawn faces that change on the words (49 expression presets landing with overshoot, takes, automatic lip-sync), rubber-hose acting, sitting checked every frame, densely dressed sets from a 148-prop library, brush-weight ink outlines, colour-scripted EEVEE light, a camera that flies between framings through one continuous set, dissolves where the story jumps, all rendered hidden and headless. 9:16 (1080x1920). Use for every build, edit and Ultraedit of a "3D cartoon shorts" project on the Blender engine (style id blender).
+description: Build 3D cartoon shorts in berat studio with the Blender engine - our own big-headed toon characters with drawn faces that change on the words (49 expression presets landing with overshoot, takes, automatic lip-sync), rubber-hose acting, sitting checked every frame, densely dressed sets from a 148-prop library, brush-weight ink outlines, colour-scripted EEVEE light, a camera that flies between framings through one continuous set, dissolves where the story jumps, all rendered hidden and headless. 9:16 (1080x1920). Use for every build, edit and Ultraedit of a "3D cartoon shorts" project on the Blender engine (style id blender).
 ---
 
 # 3D cartoon shorts on the Blender engine (blender-toon-shorts)

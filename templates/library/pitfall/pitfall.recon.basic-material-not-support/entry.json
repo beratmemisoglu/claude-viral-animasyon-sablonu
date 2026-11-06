@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.recon.basic-material-not-support",
   "uid": "0a6f8933-9c4c-5d05-ae69-9555856331f7",
@@ -63,7 +63,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "templates/library/module/module.recon.mine-props (proof run)",
       "lines": "floorLantern",
@@ -75,7 +75,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

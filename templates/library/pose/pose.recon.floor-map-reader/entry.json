@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.floor-map-reader",
   "uid": "2ad31257-bfac-594d-aad7-f43980f54a9b",
@@ -84,7 +84,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

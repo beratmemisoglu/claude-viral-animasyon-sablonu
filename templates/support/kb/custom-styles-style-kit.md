@@ -1,9 +1,9 @@
-# Custom styles and the Style Kit
+﻿# Custom styles and the Style Kit
 keywords: style kit, get the style kit, custom style, custom styles, own style, my own style, new style, make a style, create a style, build a style, from scratch, import style, import a style, style package, zip, let claude fix it, copy fix list, add to my styles, re-check, export package, go back to version, older version, style version, update style, engine update, needs fixes, import failed, checklist red
 platforms: both
 
 Your own styles (new elements, sets, characters) are built in Claude Code with the **Style Kit**, then imported into
-Creatorize. The app itself makes looks only (see "Style Studio"). Premium.
+berat. The app itself makes looks only (see "Style Studio"). Premium.
 
 ## Get the kit and build a style
 

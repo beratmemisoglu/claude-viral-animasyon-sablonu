@@ -1,9 +1,9 @@
----
+﻿---
 name: lowpoly-shorts
-description: Build a low-poly 3D short (9:16 or 16:9) in Creatorize Suite from a timed voiceover - library people with mocap clips, library sets and props, a low-res game-capture look (Bright or Moody), one clause = one shot, a camera that always moves, in-scene number callouts, engine captions. Use for every build, edit and Ultraedit of a Low poly shorts project.
+description: Build a low-poly 3D short (9:16 or 16:9) in berat studio from a timed voiceover - library people with mocap clips, library sets and props, a low-res game-capture look (Bright or Moody), one clause = one shot, a camera that always moves, in-scene number callouts, engine captions. Use for every build, edit and Ultraedit of a Low poly shorts project.
 ---
 
-# Low poly shorts (Creatorize Suite)
+# Low poly shorts (berat studio)
 
 The look of the big low-poly story shorts: a game capture of low-poly 3D. Two looks (project.json settings.look):
 - **Bright** (the weird-facts channel): flat daylight, saturated sets, a soft 320 px upscale, small yellow lowercase captions.

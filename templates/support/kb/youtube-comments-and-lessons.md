@@ -1,4 +1,4 @@
-# YouTube: comments and What's working
+﻿# YouTube: comments and What's working
 keywords: comments, youtube comments, recent comments, read comments, comments missing, no comments, comments need a free google api key, comments are turned off, what's working, lessons, ask claude, suggested lessons, keep lesson, dismiss lesson, add your own lesson, learn from my channel, what works, insights, improve scripts
 platforms: both
 
@@ -14,7 +14,7 @@ Two cards on the **YouTube** page, under the chart: **What's working** and **Rec
 ## What's working
 Claude reads the views, how long people watch and the comments, then suggests lessons.
 
-1. The YouTube channel must be linked to one of your Creatorize channels. If it isn't, the card asks you to pick one (or **Make a channel from "…"**).
+1. The YouTube channel must be linked to one of your berat channels. If it isn't, the card asks you to pick one (or **Make a channel from "…"**).
 2. Click **Ask Claude**. **Stop** ends it without adding anything.
 3. Suggestions appear under **Suggested · keep the ones that ring true**. Each one has **Keep**, **Edit** and **Dismiss**.
 4. Kept lessons have **Edit** and **Remove** (with **Undo**). **Add your own lesson** adds yours.
@@ -25,4 +25,4 @@ Where kept lessons are used:
 
 A channel you only follow to learn from needs no link: its videos and comments are there to read.
 
-If you link the YouTube channel to another Creatorize channel, the lessons kept for the old one stay with it but stop guiding its scripts until it is linked again.
+If you link the YouTube channel to another berat channel, the lessons kept for the old one stay with it but stop guiding its scripts until it is linked again.

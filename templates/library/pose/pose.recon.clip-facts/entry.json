@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.clip-facts",
   "uid": "06c7c250-c229-5f13-a5fa-7f55170c482d",
@@ -91,7 +91,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

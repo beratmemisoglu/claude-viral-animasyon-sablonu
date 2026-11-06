@@ -1,8 +1,8 @@
-# Converting an existing setup onto a kit base
+﻿# Converting an existing setup onto a kit base
 
 Many members already make videos with their own Claude Code setup: a HyperFrames or Remotion project, a Three.js page, a
 Python + ffmpeg pipeline, After Effects templates, "a template folder and a build folder". This is how that look comes
-into Creatorize. The short version: **the look comes over, the code does not.** Creatorize renders every style on its own
+into berat. The short version: **the look comes over, the code does not.** berat renders every style on its own
 engines (the bases), so the old setup is measured and rebuilt on the closest base, then finished with the normal method.
 
 Be honest with the member from the start about what comes over and what doesn't (the last section). Say it before the
@@ -80,7 +80,7 @@ their licence files, CC0 / PD / CC-BY files with source and author. Nothing with
 
 Proof that the look came over is a frame-by-frame comparison, not an opinion.
 1. Pick one of the member's finished videos. Take its first 15 s: cut list, one frame per shot, the words
-   (METHOD.md stage 1). For the narration timing, the member makes a Creatorize project with that video's voice-over and
+   (METHOD.md stage 1). For the narration timing, the member makes a berat project with that video's voice-over and
    you copy its `audio/timeline.json`, or use the old setup's own word timings converted to
    `[{ s, e, text, words: [{ w, s, e }] }]`.
 2. Add a view `match` (`scenes/match.js`, end 15) that rebuilds those 15 s with the style's kit: same shots, same
@@ -103,7 +103,7 @@ loop, sign-off, package, battle test. A converted style passes exactly the same 
 | Comes over | Doesn't |
 |---|---|
 | the look: palette, type, layout, motion feel, transitions, camera feel, pacing | the old code itself: React / Remotion components, HTML and CSS, GSAP timelines, AE projects, Python frame generators |
-| the member's own art, characters, logos (as files they own) | another renderer: Creatorize renders every style on its own engines |
+| the member's own art, characters, logos (as files they own) | another renderer: berat renders every style on its own engines |
 | licensed fonts and assets, with credits | anything fetched from the web at render time (APIs, CDNs): frames must not depend on the network |
 | the image prompt style | random or clock-driven effects as they were: they are rebuilt seeded and as functions of time |
 | the narration and caption rules | effects only a browser's CSS can do and no shader replaces: say which, show the nearest result |

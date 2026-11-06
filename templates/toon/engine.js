@@ -1,4 +1,4 @@
-// Creatorize Suite engine - 3D toon shorts. Original big-headed cartoon characters with painted faces (expression sprites
+﻿// berat studio engine - 3D toon shorts. Original big-headed cartoon characters with painted faces (expression sprites
 // made with Google Flow), soft toon shading with ink outlines, dense dressed sets, depth of field and bloom, a camera
 // that never quite stops, 5-7 frame dissolves, captions on 3 frames early. 9:16 (1080 x 1920) or 16:9: settings.format.
 // The look was learned frame by frame from reference shorts (experiments/toon-style); every character, set and logo

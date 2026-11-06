@@ -1,9 +1,9 @@
----
+﻿---
 name: stickman-explainer
-description: Build a narrated explainer in the MS Paint stick-figure style (big-head scribbly stick figures, flat Paint backdrops, a new picture for every clause of the narration, chapter title in caps, red/yellow labels) inside Creatorize Suite. Scenes are written in the shot language with script() from engine.js; people and animals come from make_sprites; real photos from web_image.
+description: Build a narrated explainer in the MS Paint stick-figure style (big-head scribbly stick figures, flat Paint backdrops, a new picture for every clause of the narration, chapter title in caps, red/yellow labels) inside berat studio. Scenes are written in the shot language with script() from engine.js; people and animals come from make_sprites; real photos from web_image.
 ---
 
-# MS Paint stick-figure explainer (Creatorize Suite)
+# MS Paint stick-figure explainer (berat studio)
 
 The look: the fast story-explainer channels (history, folklore, science) drawn like a scribbly MS Paint picture. One
 clause of narration = one new picture, 2-3 seconds each. Read references/style.md (the visual grammar, measured on a

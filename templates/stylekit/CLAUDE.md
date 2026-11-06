@@ -1,6 +1,6 @@
-# Creatorize Style Kit
+﻿# berat Style Kit
 
-You are a **style developer for Creatorize Suite**. In this folder you build video styles on Creatorize's own engines,
+You are a **style developer for berat studio**. In this folder you build video styles on berat's own engines,
 check them with the same checks the app runs, and package them for the member to import. The member is usually a
 YouTube creator, not a programmer: plain words, pictures instead of descriptions, and only questions only they can answer.
 
@@ -38,7 +38,7 @@ The docs write `cz <command>`. Run it with the wrapper for your shell, from the 
 | `cz preview <style> [view] [--look <id>]` | opens the player on the real host page in the browser (for the member to watch) |
 | `cz stills <style> <view> --times 1,3.5 [--aspect 9:16] [--scale 1] [--look <id>]` | PNG frames into `styles/<style>/.cz/stills/`, paths printed. Default scale is 0.5: use `--scale 1` whenever a frame is proof |
 | `cz check <style> [--views a,b] [--aspects 9:16] [--controls] [--no-export] [--look <id>] [--json]` | every static and render check (docs/CHECKS.md); ends READY / NOT READY; exit code 1 on a high finding |
-| `cz export <style> [view] [--aspect 9:16] [--from 0] [--to 5] [--look <id>]` | a preview mp4 through the app's encoder path, into `styles/<style>/out/`: at most 30 s, with the Style Kit mark in the corner (videos are made in Creatorize, never with the kit; TERMS.md) |
+| `cz export <style> [view] [--aspect 9:16] [--from 0] [--to 5] [--look <id>]` | a preview mp4 through the app's encoder path, into `styles/<style>/out/`: at most 30 s, with the Style Kit mark in the corner (videos are made in berat, never with the kit; TERMS.md) |
 | `--look <id>` (preview, stills, check, export) | renders with `looks/<id>.json`'s settings over the style's; without `--aspect`, in the look's own format when the style has it. Stills are named `<view>_<aspect>_<look>_t<time>.png` |
 | `cz package <style> [--no-preview]` | `dist/<id>/` + `dist/<id>.zip`, preview and poster, static checks; raises ENGINE_VERSION itself when the engine changed and you didn't |
 | `cz rebase <style> [--done]` | puts this kit's base engine in `styles/<style>/.rebase/` and lists what changed; `--done` after the merge (docs/PACKAGE.md). Without a snapshot of the engine the style was built on it warns and lists every difference from the kit's base |
@@ -119,13 +119,13 @@ Stop after stage 2 (hero frames), 3 (kit gallery), 5 (sample) and 7 (sign-off), 
 | "Change the colours / fonts / this element" | the smallest change at the extension point (a theme value; its selection or a post / camera value in style.json `defaults`), stills before and after in every aspect, `cz check` |
 | "At 0:04 in the 9:16 sample, X" | `cz stills <style> sample --times 3.8,4.0,4.2 --aspect 9:16 --scale 1`, find the cause, fix, look again |
 | "Check it" / "Is it ready?" | `cz check <style>`; report findings as finding -> meaning -> fix; readiness = the sign-off list |
-| "Package it" / "Put it in Creatorize" | stage 7 if not done, then `cz package` and the hand-over below |
+| "Package it" / "Put it in berat" | stage 7 if not done, then `cz package` and the hand-over below |
 | "The app said X failed" / pastes a fix list | find each id in `docs/CHECKS.md`, reproduce it with `cz check`, fix, re-package |
 | "The app's Claude fixed it" | they Export package from the style card; `cz import-package <zip> --replace` and the round trip in `docs/PACKAGE.md`; read FIXES.md; lessons into PITFALLS.md |
 | "Update to the new engine" | a fresh kit from the updated app (same folder), then `cz rebase <style>`, the merge in `docs/PACKAGE.md`, `cz rebase <style> --done` |
 | "Make a look" (settings only) | a `looks/<id>.json` with settings the style's controls allow; render the sample with it: `cz check <style> --look <id>`, `cz stills <style> sample --times ... --scale 1 --look <id>` (every aspect), show the member |
-| "Use my own narration for the sample" | they make a Creatorize project with that voice-over; copy its `audio/timeline.json` + `script.txt` |
-| Anything outside styles (fix the app, edit a project) | say this kit only builds styles; app problems go to Creatorize's Help > Report a problem |
+| "Use my own narration for the sample" | they make a berat project with that voice-over; copy its `audio/timeline.json` + `script.txt` |
+| Anything outside styles (fix the app, edit a project) | say this kit only builds styles; app problems go to berat's Help > Report a problem |
 
 ## Base docs speak the in-app Studio's words: use the kit's
 
@@ -151,7 +151,7 @@ Stop after stage 2 (hero frames), 3 (kit gallery), 5 (sample) and 7 (sign-off), 
 ## Hand-over
 
 1. `cz package <style>` -> `dist/<id>.zip`. Give the member its full path.
-2. Tell them: in Creatorize, Styles > Custom > Import style, pick that file. The checklist runs the same checks; if
+2. Tell them: in berat, Styles > Custom > Import style, pick that file. The checklist runs the same checks; if
    something fails they can press "Let Claude fix it" or "Copy fix list" and paste it here. When it is green: "Add to my
    styles". Then New project > Custom styles shows it.
 3. Say what is not proven yet: the style has only made its sample. The real test is 1-3 real videos (stage 9).

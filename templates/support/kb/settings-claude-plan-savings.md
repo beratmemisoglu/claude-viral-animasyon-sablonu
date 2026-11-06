@@ -1,4 +1,4 @@
-# Your Claude plan and savings on Home
+﻿# Your Claude plan and savings on Home
 keywords: your claude plan, claude plan, pro, max, max 5x, max 20x, team, plan price, other price, savings, you saved, how much did i save, api equivalent, cost, money, tokens used, usage, billing, subscription, hide savings, not sure hide savings, wrong savings, plan pays for itself, pick your plan to see it, home stats
 platforms: both
 
@@ -21,4 +21,4 @@ In **Settings > AI engines > Your Claude plan** (or the plan pill on Home's savi
 - **Plan pays for itself at** shows instead while you have used less than your plan costs.
 - "Pick your plan to see it": choose your plan as above.
 
-This is your Claude plan, not your Creatorize plan (Standard or Premium).
+This is your Claude plan, not your berat plan (Standard or Premium).

@@ -1,4 +1,4 @@
-# Character animations (3D reconstruction)
+﻿# Character animations (3D reconstruction)
 keywords: animations, animation, moves, motion, mocap, motion capture, mixamo, fbx, import fbx, import animation, add animation, walk, run, sit, dance, character animations, clips, my clips, in place, without skin, inbox folder, remove animation
 platforms: both
 
@@ -10,7 +10,7 @@ clips come with the app; you can add your own. Find it in **Settings** > **Media
 1. Go to mixamo.com and sign in with your own free Adobe account.
 2. Pick a motion, then download it as **FBX**, **Without Skin**, **30** frames per second. Tick **In Place** for walks
    and runs.
-3. In Creatorize click **Import FBX…** and pick the files (FBX, GLB or GLTF, up to 150 MB each).
+3. In berat click **Import FBX…** and pick the files (FBX, GLB or GLTF, up to 150 MB each).
 
 Or drop the files into the inbox folder: they are added by themselves. **Show in File Explorer** (Windows) or
 **Show in Finder** (Mac) opens the folder.

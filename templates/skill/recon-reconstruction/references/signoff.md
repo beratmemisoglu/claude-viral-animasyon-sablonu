@@ -1,9 +1,9 @@
-# Reconstruction style: sign-off before render
+﻿# Reconstruction style: sign-off before render
 
 **No video gets its final render until both halves of this sign-off pass:** the automatic gate and the manual frame review.
 Nothing is shown to anyone before then. A failed item is fixed at its cause, never hidden by moving the camera away.
-This file is the contract for wiring the style into Creatorize: the app's build step must run the same gate and refuse
-to export a video that fails it (see "For the Creatorize integration" at the end).
+This file is the contract for wiring the style into berat: the app's build step must run the same gate and refuse
+to export a video that fails it (see "For the berat integration" at the end).
 
 ## 0. Build it right first (prevention)
 
@@ -35,7 +35,7 @@ It runs, in order:
 | `render.mjs stills --q audit=1` (one still every 3 s, so every shot is built) | Coplanar surfaces that will z-fight | no `COPLANAR` line |
 | `render.mjs zfight 0 <end> .2` | Flicker from ambiguous depth anywhere in the film | `clean` |
 | `render.mjs collide 0 <end> .1` | **Bodies passing through bodies or through solid objects**, every 0.1 s | `clean` |
-| `check_layout` in Creatorize (engine v3, `src/contact.js`) | **Spatial consistency**: props on screen that float (rest on nothing, gaps where parts should meet) or pass through another solid prop | no `floating` / `through` line |
+| `check_layout` in berat (engine v3, `src/contact.js`) | **Spatial consistency**: props on screen that float (rest on nothing, gaps where parts should meet) or pass through another solid prop | no `floating` / `through` line |
 
 **How `collide` works** (`src/collide.js`):
 - Each body becomes a set of capsules (torso, head, upper and lower arms, hands, thighs, shins) built from its joints every frame.
@@ -99,7 +99,7 @@ at the riskiest moments.
   - Running the new check on all three films found one more case the eye had missed: two walkers in the cave film bumped
     arms by up to 4 cm at 8–10 s.
 
-## For the Creatorize integration (later)
+## For the berat integration (later)
 
 When this style is wired into the app:
 

@@ -1,4 +1,4 @@
-# Graphics and preview errors
+﻿# Graphics and preview errors
 keywords: black preview, blank preview, preview not loading, webgl, graphics, gpu, graphics card, software graphics, switched to software, restart now, 3d preview, preview failed to load, preview warnings, fix with claude, sound events, stopped responding, dark window, empty window, window stays black, black screen, rescue, safe display
 platforms: both
 
@@ -6,12 +6,10 @@ platforms: both
 What it means: on some graphics cards the app runs but its window never shows on screen (one flat dark rectangle, no buttons).
 
 Fix:
-1. Wait a minute: the **Creatorize Launcher** watches every start. On Windows, when the window looks dark it asks in its own small window, **Is Creatorize's window dark or empty?**: click **It's dark: fix it** and it restarts Creatorize in **Safe display**. If it's still dark it tries software graphics next.
-2. The app also checks this itself after every update. On Windows a Windows message may ask **Is the Creatorize window dark or empty?**: click **It's dark or empty - fix it**. The app restarts in **Safe display** (3D still runs on your graphics card, full speed). Opening the app again while the dark window is open also brings up that question.
-3. Still dark, or no launcher yet? Open **Creatorize Launcher** yourself (Windows: Start menu; Mac: Applications) and click **Open**, or run the rescue command. It closes Creatorize, updates it and starts it in a mode that shows. Projects, settings and the Skool login are not touched.
-   - Windows (PowerShell): `irm https://raw.githubusercontent.com/therussellchris/creatorize/main/rescue.ps1 | iex`
-   - Mac (Terminal): `curl -fsSL https://raw.githubusercontent.com/therussellchris/creatorize/main/rescue.sh | bash`
-4. Still dark on Windows: close it and run `$env:CZ_RESCUE='software'; irm https://raw.githubusercontent.com/therussellchris/creatorize/main/rescue.ps1 | iex` (software graphics: slower, always shows).
+1. Wait a minute: the **berat Launcher** watches every start. On Windows, when the window looks dark it asks in its own small window, **Is berat's window dark or empty?**: click **It's dark: fix it** and it restarts berat in **Safe display**. If it's still dark it tries software graphics next.
+2. The app also checks this itself after every update. On Windows a Windows message may ask **Is the berat window dark or empty?**: click **It's dark or empty - fix it**. The app restarts in **Safe display** (3D still runs on your graphics card, full speed). Opening the app again while the dark window is open also brings up that question.
+   - Windows (PowerShell): `irm https://raw.githubusercontent.com/beratmemisoglu/berat/main/rescue.ps1 | iex`
+   - Mac (Terminal): `curl -fsSL https://raw.githubusercontent.com/beratmemisoglu/berat/main/rescue.sh | bash`
 5. After a graphics driver update you can go back to full speed: **Settings > System > Graphics > Try the graphics card again**.
 
 ## Stuck on software graphics (slow previews and exports)

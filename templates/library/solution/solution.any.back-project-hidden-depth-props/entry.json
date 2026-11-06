@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "solution.any.back-project-hidden-depth-props",
   "uid": "ec65b63f-625e-52c4-a149-719e9acbf53e",
@@ -64,7 +64,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#6, #31, rec 4",
@@ -76,7 +76,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

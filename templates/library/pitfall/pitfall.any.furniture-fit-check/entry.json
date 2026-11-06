@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.any.furniture-fit-check",
   "uid": "ba789807-1515-578e-a42d-ad0e5aba3817",
@@ -62,7 +62,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "café-specific findings; loop 4",
@@ -74,7 +74,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

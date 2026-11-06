@@ -1,4 +1,4 @@
-# SOP: narration in -> finished shots (the Blender engine inside Creatorize)
+﻿# SOP: narration in -> finished shots (the Blender engine inside berat)
 
 The lab's method (three shorts the owner called marvellous), step by step, with what the app does for you. Every step
 ends in a GATE; don't start the next step until it passes. The bar and the numbers: qa.md. The calls: engine_api.md.

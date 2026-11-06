@@ -1,7 +1,7 @@
-"""Whisper fallback with the Parakeet pipeline's interface, for machines without Parakeet (no NVIDIA GPU, macOS).
+﻿"""Whisper fallback with the Parakeet pipeline's interface, for machines without Parakeet (no NVIDIA GPU, macOS).
     python asr_whisper.py FILE [FILE ...] --out DIR [--no-align]
 Writes DIR/<stem>.json = {source, model, aligned, duration, text, segments: [{text, start, end}], words: [{word, start, end}]}
-plus <stem>.txt, like transcribe.py in ~/tools/parakeet. Uses stable-ts (installed by the Creatorize installer); the model
+plus <stem>.txt, like transcribe.py in ~/tools/parakeet. Uses stable-ts (installed by the berat installer); the model
 loads once for all files. CZ_WHISPER_MODEL overrides the model (default: turbo on CUDA, small.en on CPU)."""
 import argparse, json, os, sys
 
@@ -12,7 +12,7 @@ a = ap.parse_args()
 try:
     import torch, stable_whisper
 except ImportError as e:
-    sys.exit(f'Whisper fallback needs stable-ts ({e}). Run the Creatorize installer again or: python -m pip install stable-ts')
+    sys.exit(f'Whisper fallback needs stable-ts ({e}). Run the berat installer again or: python -m pip install stable-ts')
 dev = 'cuda' if torch.cuda.is_available() else 'cpu'
 name = os.environ.get('CZ_WHISPER_MODEL') or ('turbo' if dev == 'cuda' else ('small.en' if a.lang == 'en' else 'small'))
 model = stable_whisper.load_model(name, device=dev)

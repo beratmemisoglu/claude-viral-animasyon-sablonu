@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.any.metric-box",
   "uid": "e277e2c9-3ae6-5505-a07c-077859e74da1",
@@ -105,7 +105,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

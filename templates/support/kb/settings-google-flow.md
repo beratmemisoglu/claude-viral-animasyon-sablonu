@@ -1,4 +1,4 @@
-# Google Flow for pictures (free with your Flow credits)
+﻿# Google Flow for pictures (free with your Flow credits)
 keywords: google flow, flow, flow credits, free pictures, nano banana, nano banana 2.1, chrome, google chrome, needs google chrome, open flow to sign in, flow test, flow window, flow not working, flow stopped, flow closed, google sign in, gemini pictures, chrome window closed, flow prompt box, at your own risk
 platforms: both
 
@@ -25,5 +25,5 @@ Google Flow makes your pictures with your own Flow credits (Nano Banana 2.1), in
 - "The Flow Chrome window was closed": click **Open Flow to sign in** again and keep the window open.
 - "Chrome started but did not answer": close any Flow Chrome window that is already open and try again.
 - "Flow did not show its prompt box": in the Flow window, make sure you are signed in and a project is open, then try again.
-- "The aspect ratio can't be set" during setup: Creatorize switches Flow's Agent mode off by itself (it hides the aspect-ratio setting). If setup still says the aspect ratio can't be set, look at the bar under the prompt in the Flow window: if it only shows Agent, click Agent so it's grey, then **Test** again.
+- "The aspect ratio can't be set" during setup: berat switches Flow's Agent mode off by itself (it hides the aspect-ratio setting). If setup still says the aspect ratio can't be set, look at the bar under the prompt in the Flow window: if it only shows Agent, click Agent so it's grey, then **Test** again.
 - "Flow may have changed its page": Flow changed; pick Higgsfield or Fal.ai until it works again.

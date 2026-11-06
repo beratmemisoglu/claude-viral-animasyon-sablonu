@@ -1,22 +1,22 @@
-# Creatorize Style Kit: the guide
+﻿# berat Style Kit: the guide
 
-Build your own video style with Claude Code, on the same engines Creatorize uses, and add it to Creatorize so every
+Build your own video style with Claude Code, on the same engines berat uses, and add it to berat so every
 video, routine and look can use it.
 
 ---
 
 ## 1. What the kit is, and why
 
-The Style Kit is a folder on your computer. Inside it are Creatorize's real video engines (the same ones the app renders
+The Style Kit is a folder on your computer. Inside it are berat's real video engines (the same ones the app renders
 with), the checks the app runs, and instructions that turn Claude Code into a style developer. You talk to Claude in plain
 words ("make a style like these videos"), Claude builds the style step by step and shows you frames to approve, and at the
-end it packs the style into one file. You import that file into Creatorize, the app checks it again, and the style appears
+end it packs the style into one file. You import that file into berat, the app checks it again, and the style appears
 next to the built-in ones.
 
 Why it works this way:
 - **You get the best results where Claude works best:** in Claude Code, with time to study your references, try things
   and check every frame.
-- **The engines are the real ones.** What you see in the kit is what Creatorize renders. Nothing has to be "translated"
+- **The engines are the real ones.** What you see in the kit is what berat renders. Nothing has to be "translated"
   later.
 - **The app checks everything again** when you import, with the same checks, so a style that passes in the kit passes in
   the app.
@@ -26,21 +26,21 @@ Why it works this way:
 
 ## 2. What you need
 
-- **Creatorize installed and signed in, on Premium.** Custom styles are a Premium feature.
-- **Claude Code** (Creatorize's installer already installed it). To check, open PowerShell (Windows) or Terminal (Mac)
+- **berat installed and signed in, on Premium.** Custom styles are a Premium feature.
+- **Claude Code** (berat's installer already installed it). To check, open PowerShell (Windows) or Terminal (Mac)
   and type `claude --version`.
 - **Google Chrome or Microsoft Edge.** Windows always has Edge. On a Mac, install Chrome if you don't have it.
-- **ffmpeg, git and Node.js** come with Creatorize's installer. You don't install anything else.
+- **ffmpeg, git and Node.js** come with berat's installer. You don't install anything else.
 - Optional: 1-3 reference videos or pictures of the look you want.
 
 ## 3. Get the kit
 
-1. Open Creatorize and go to **Styles**, then the **Custom** tab.
+1. Open berat and go to **Styles**, then the **Custom** tab.
 2. Click **Get the Style Kit**.
-3. Pick a folder, for example your Documents folder. Creatorize creates a folder called **Creatorize Style Kit** there,
+3. Pick a folder, for example your Documents folder. berat creates a folder called **berat Style Kit** there,
    shows it to you and opens this guide.
 
-The kit always matches your Creatorize version. After an app update, getting the kit again into the same folder
+The kit always matches your berat version. After an app update, getting the kit again into the same folder
 refreshes the engines and keeps your styles (section 12).
 
 ![screenshot: Styles > Custom with the Get the Style Kit and Import style cards](shots/styles-custom.png)
@@ -51,21 +51,21 @@ there). They stay on your computer: they are never put into a style package.
 ## 4. Start Claude Code in the kit folder
 
 **Windows**
-1. In File Explorer, right-click the **Creatorize Style Kit** folder and choose **Copy as path** (on Windows 10, hold
+1. In File Explorer, right-click the **berat Style Kit** folder and choose **Copy as path** (on Windows 10, hold
    Shift while you right-click).
 2. Open **Terminal** (or **PowerShell**) from the Start menu.
 3. Type `cd ` (with a space after it), paste the path with a right-click or Ctrl+V, and press Enter. It looks like:
    ```
-   cd "C:\Users\you\Documents\Creatorize Style Kit"
+   cd "C:\Users\you\Documents\berat Style Kit"
    ```
 4. Type `claude` and press Enter.
 
 **Mac**
 1. Open **Terminal** (press Cmd+Space, type Terminal, press Return).
-2. Type `cd ` (with a space after it), then drag the **Creatorize Style Kit** folder from Finder onto the Terminal window.
+2. Type `cd ` (with a space after it), then drag the **berat Style Kit** folder from Finder onto the Terminal window.
    The path appears (the backslashes before the spaces are right). Press Return. It looks like:
    ```
-   cd /Users/you/Documents/Creatorize\ Style\ Kit
+   cd /Users/you/Documents/berat\ Style\ Kit
    ```
 3. Type `claude` and press Return.
 
@@ -75,7 +75,7 @@ to run a kit command (they start with `cz`) or ffmpeg, it asks first; allowing t
 Claude now knows the kit: the instructions in the folder load by themselves.
 
 The first thing Claude runs is `cz doctor`: a one-minute check of this computer. It finds Chrome or Edge (the kit draws
-your style in it, out of sight), ffmpeg (makes the videos) and your Creatorize app (the kit borrows its fonts and model
+your style in it, out of sight), ffmpeg (makes the videos) and your berat app (the kit borrows its fonts and model
 library), and says in plain words if something is missing. If it reports a problem, section 13 says what to do.
 
 ![screenshot: Claude Code started in the kit folder (Windows Terminal and Mac Terminal)](shots/claude-started.png)
@@ -134,7 +134,7 @@ Claude makes the file to import (section 9).
 ## 6. How to look at your style
 
 The easiest way: ask Claude ("show me the sample", "show me the kit"). It opens a window that plays the style on the
-same page Creatorize renders with.
+same page berat renders with.
 
 You can also type the kit commands yourself in a second Terminal / PowerShell window in the kit folder. `midnight-files`
 is the style's folder name (in `styles/`):
@@ -179,7 +179,7 @@ Do three review rounds, then have a fresh critic compare it with the references.
 ```
 Go back to the save point before the font change.
 ```
-Every package you import also becomes a version in Creatorize (v1, v2, ...), and the app keeps your last versions
+Every package you import also becomes a version in berat (v1, v2, ...), and the app keeps your last versions
 (section 11).
 
 **Big change of direction?** Say so plainly ("I want it lighter overall, more like refs/b.mp4"). Claude goes back to the
@@ -189,7 +189,7 @@ frames.
 ## 8. Bringing an existing setup
 
 Already making videos with your own Claude Code setup (HyperFrames, Remotion, a Three.js page, Python and ffmpeg, After
-Effects templates, a template folder plus a build folder)? The look comes over; the code doesn't. Creatorize renders every
+Effects templates, a template folder plus a build folder)? The look comes over; the code doesn't. berat renders every
 style on its own engines, so Claude measures your setup and rebuilds the look on the closest base.
 
 1. Copy your old setup into the kit folder, for example into a folder called `old`, and put 1-3 of your finished videos
@@ -205,18 +205,18 @@ style on its own engines, so Claude measures your setup and rebuilds the look on
 
 What comes over: your look (colours, type, layout, motion feel, transitions, pacing), your own drawings, characters and
 logos, fonts and assets whose licences allow it. What doesn't: the old code itself, anything that loads from the internet
-while rendering, and effects no Creatorize engine can draw (Claude tells you which, and shows the closest result).
+while rendering, and effects no berat engine can draw (Claude tells you which, and shows the closest result).
 
 ## 9. Export and import
 
 **1. Package.** Ask Claude to "package it". The file lands in the kit's `dist` folder, named like
 `custom-midnight-files.zip`.
 
-**2. Import.** In Creatorize: **Styles > Custom > Import style**, and pick that file.
+**2. Import.** In berat: **Styles > Custom > Import style**, and pick that file.
 
 ![screenshot: the Import style page with the checklist running](shots/import-checklist.png)
 
-**3. The checklist.** Creatorize checks the style in two parts:
+**3. The checklist.** berat checks the style in two parts:
 - **The files:** the style's settings are valid, nothing too big or not allowed is inside, the engine still has
   everything the app needs, the code gives the same picture every time, the sample is complete, the looks are valid,
   the texts are filled in, every asset has a credit, every font has its licence.
@@ -227,8 +227,8 @@ while rendering, and effects no Creatorize engine can draw (Claude tells you whi
 Each problem is shown in three parts: **what was found -> what it means -> how to fix it**.
 
 **4. If something fails**, you have two choices:
-- **Let Claude fix it:** a Claude inside Creatorize fixes it. It can only change this style's files (never the app, never
-  other styles, never your videos), and Creatorize re-checks everything itself after each round (up to 3 rounds).
+- **Let Claude fix it:** a Claude inside berat fixes it. It can only change this style's files (never the app, never
+  other styles, never your videos), and berat re-checks everything itself after each round (up to 3 rounds).
 - **Copy fix list:** copies the problems as text. Paste it into Claude Code in the kit:
   ```
   The app said these failed: (paste here)
@@ -262,14 +262,14 @@ package would undo the app's fixes.
 3. Your existing videos keep the version they were made with. In a video made with v1, the editor shows
    **"Midnight Files v2 is available · Update"**. Update when you want it; it is one step in the video's History, so you
    can undo it.
-4. Creatorize keeps your last 3 versions. To return to an older one, use **Go back to v1** on the style's card: it is
+4. berat keeps your last 3 versions. To return to an older one, use **Go back to v1** on the style's card: it is
    installed again as the next version (v3), so nothing is lost.
 
 New videos always start on the newest version.
 
-## 12. When Creatorize updates its engines
+## 12. When berat updates its engines
 
-Creatorize improves its built-in engines over time. **Your style keeps the engine it was built on** and keeps working
+berat improves its built-in engines over time. **Your style keeps the engine it was built on** and keeps working
 exactly as before: app updates never change it.
 
 When a newer engine is available, the style's card says **engine update available**. To move your style to it (only if
@@ -293,9 +293,9 @@ you want what the new engine brings):
 | `claude: command not found` / `'claude' is not recognized` | Close and reopen Terminal / PowerShell. Still missing: install Claude Code with the command below this table. |
 | Claude says `cz doctor` found no browser | Install Google Chrome or Microsoft Edge (Windows always has Edge; on a Mac, install one of them). |
 | Claude says ffmpeg is missing | Windows PowerShell: `winget install --id Gyan.FFmpeg -e`; Mac Terminal: `brew install ffmpeg`. Then reopen the terminal. |
-| `cz doctor` says Creatorize moved or can't be found | Get the Style Kit again into the same folder (your styles stay). |
+| `cz doctor` says berat moved or can't be found | Get the Style Kit again into the same folder (your styles stay). |
 | The preview window stays blank | Ask Claude to run `cz doctor` and `cz check` on the style: the first error tells it what is missing. |
-| There is no Import style or Get the Style Kit | Custom styles need Premium, and a Creatorize version with the Style Kit: update the app. |
+| There is no Import style or Get the Style Kit | Custom styles need Premium, and a berat version with the Style Kit: update the app. |
 | The import checklist shows red items | Click **Let Claude fix it**, or **Copy fix list** and paste it into Claude Code in the kit. |
 | "Let Claude fix it" stopped with items still red | Copy fix list, paste into Claude Code in the kit; it has more room to fix bigger problems. |
 | My style changes from the app are gone after a re-import | The app's fixes weren't brought back: Export package from the card, then "Bring this package back: <file>" in the kit (section 9). |
@@ -312,16 +312,16 @@ Then close and reopen the window and type `claude` again.
 ## 14. Rules
 
 These protect you, your channel and other members.
-- **The kit is for building styles for Creatorize** (TERMS.md in the kit folder). Its videos are short previews (at most
-  30 seconds, with a "Creatorize Style Kit · preview" mark); your real videos are made in Creatorize. Don't share the kit
+- **The kit is for building styles for berat** (TERMS.md in the kit folder). Its videos are short previews (at most
+  30 seconds, with a "berat Style Kit · preview" mark); your real videos are made in berat. Don't share the kit
   itself; share the style packages you make with other members.
 - **Licences.** Only assets you may hand on: CC0, public domain, CC-BY (with the author credited), free fonts with their
   licence (OFL), or your own work. Claude keeps a credits list (CREDITS.json) and the app checks it.
-- **No Mixamo files in a style.** Mixamo characters and animations may be used in your own videos inside Creatorize (the
+- **No Mixamo files in a style.** Mixamo characters and animations may be used in your own videos inside berat (the
   app's character and animation import), never inside a style package.
 - **Never your reference videos.** They stay in `refs` on your computer; packages only carry Claude's notes about them.
 - **No secrets.** Never put API keys or passwords in the kit folder.
-- **No slop** (the same rules as every Creatorize style): no red stamps or verdict words slapped on screen ("CLOSED",
+- **No slop** (the same rules as every berat style): no red stamps or verdict words slapped on screen ("CLOSED",
   "DENIED"), no notice that the voice is AI, no sound effects you didn't supply, no text inside generated pictures, no
   drawn stand-ins for real evidence, and every frame readable.
 - **Styles take the look of references, never their content:** no copied faces, logos, characters or artwork.
@@ -330,7 +330,7 @@ These protect you, your channel and other members.
 
 | Word | Meaning |
 |---|---|
-| Base | One of Creatorize's engines a style is built on (starter, flat, collage, recon, lowpoly, pixel-art, stickman). |
+| Base | One of berat's engines a style is built on (starter, flat, collage, recon, lowpoly, pixel-art, stickman). |
 | Engine | The code that draws the video. Your style has its own copy of its base's engine. |
 | Style | A look plus its engine, rules and settings. Many videos can use one style. |
 | Look | Saved settings for a style (colours, grain, camera, captions). One style can have many looks. |
@@ -342,7 +342,7 @@ These protect you, your channel and other members.
 | Must-fail scene | A scene that is wrong on purpose. If its check stops catching it, the check is broken. |
 | Finding | A problem a check or Claude found, written as what -> what it means -> how to fix it. |
 | Critic | A fresh Claude that only looks and judges, every few review rounds. |
-| Package | The one file (`.zip`) you import into Creatorize. |
+| Package | The one file (`.zip`) you import into berat. |
 | Version | Each import of the same style is a new version (v1, v2 ...). Videos keep theirs until you Update. |
-| Rebase | Moving your style to a newer engine from Creatorize, keeping your changes. |
-| Kit folder | The Creatorize Style Kit folder on your computer, where Claude Code works. |
+| Rebase | Moving your style to a newer engine from berat, keeping your changes. |
+| Kit folder | The berat Style Kit folder on your computer, where Claude Code works. |

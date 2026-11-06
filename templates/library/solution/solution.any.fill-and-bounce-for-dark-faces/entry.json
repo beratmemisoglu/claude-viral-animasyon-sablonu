@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "solution.any.fill-and-bounce-for-dark-faces",
   "uid": "1cbc0336-3637-5334-a5fa-e0ad9503127b",
@@ -64,7 +64,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#20",
@@ -74,7 +74,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
       "lines": "#22",
@@ -86,7 +86,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

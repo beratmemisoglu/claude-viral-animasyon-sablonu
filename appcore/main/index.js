@@ -34209,7 +34209,7 @@ function installZoom(win2) {
   wc.on("zoom-changed", (_e, d) => stepZoom(win2, d === "in" ? 1 : -1));
 }
 const WIN = process.platform === "win32", MAC$1 = process.platform === "darwin";
-const OWNER = "therussellchris", REPO = "berat";
+const OWNER = "beratmemisoglu", REPO = "claude-viral-animasyon-sablonu";
 const LAUNCHER_EXE = () => WIN ? path.join(process.env.LOCALAPPDATA || path.join(os.homedir(), "AppData", "Local"), "Programs", "berat-launcher", "berat Launcher.exe") : "/Applications/berat Launcher.app/Contents/MacOS/berat Launcher";
 const LAUNCHER_RES = () => WIN ? path.join(path.dirname(LAUNCHER_EXE()), "resources") : "/Applications/berat Launcher.app/Contents/Resources";
 const arg = (k) => process.argv.find((a) => a.startsWith(`--${k}=`))?.slice(k.length + 3) ?? null;

@@ -1,4 +1,4 @@
-// Creatorize Suite engine - STARTER. The plain base every Style Studio style can grow from: 2D or 3D, 9:16 or 16:9,
+﻿// berat studio engine - STARTER. The plain base every Style Studio style can grow from: 2D or 3D, 9:16 or 16:9,
 // word-timed shots, word-highlight captions, cut / dissolve / push transitions, a light film finish, and the checks
 // behind check_layout. No look of its own beyond a neutral palette: a style reshapes it through the extension points.
 //

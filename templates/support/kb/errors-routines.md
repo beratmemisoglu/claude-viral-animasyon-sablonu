@@ -1,11 +1,9 @@
-# Routine errors
+﻿# Routine errors
 keywords: routine failed, routines, node failed, routine stopped, no project yet, no voice is set up, narration not ready, words heard, claude gave no title, rendered video, allow uploads, youtube channel, not a routine, import routine, premium
 platforms: both
 
 ## Routines are Premium
-> Routines is a Premium feature. Upgrade to Premium on Skool to unlock it.
 
-Fix: upgrade to Premium on Skool.
 
 ## A node is in the wrong place
 > There is no project yet: put a Create project before this node.
@@ -43,7 +41,7 @@ Fix: retry this video.
 Fix: select the node, pick the channel and press **Allow uploads**.
 
 ## Import
-> That file is not a routine exported from Creatorize Suite.
+> That file is not a routine exported from berat studio.
 
 Fix: import a routine file that was exported from the app.
 

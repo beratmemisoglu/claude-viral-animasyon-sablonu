@@ -1,4 +1,4 @@
-"""Stage the intro for editing: work/intro/ with the render copy, the transcript, study frames and the kit.
+﻿"""Stage the intro for editing: work/intro/ with the render copy, the transcript, study frames and the kit.
     "$CZ_PYTHON" "$SK/stage.py"                              # first run: stage + transcribe the raw intro
     "$CZ_PYTHON" "$SK/stage.py" --keep "0.00-4.12,6.80-31.40"   # splice out false starts (RAW intro seconds), re-transcribe
 Never modifies the footage. Re-running never overwrites index.html, storyboard.json or anything else you wrote.
@@ -188,7 +188,7 @@ def main():
     print(f'  render copy input-video.mp4  {R["w"]}x{R["h"]}  {fps_i} fps  {dur:.3f}s' + (f'  (spliced: {len(rng)} pieces)' if a.keep else ''))
     print(f'  {len(words)} words  ->  words.json / transcript.json' + ('' if a.keep else ' (raw timings also in raw_words.json)'))
     print('  study/sheet.jpg: 8 stills at ' + ', '.join(f'{dur * (i + 0.5) / 8:.1f}s' for i in range(8)))
-    if not npx: print('NEEDS NODE: HyperFrames runs on Node.js, which is not installed. Tell the user to run the Creatorize installer again (it adds Node.js).')
+    if not npx: print('NEEDS NODE: HyperFrames runs on Node.js, which is not installed. Tell the user to run the berat installer again (it adds Node.js).')
     print('\nTranscript (seconds in input-video.mp4):')
     for l in lines(words): print(f"  {l['start']:7.2f}-{l['end']:7.2f}  {l['text']}")
 

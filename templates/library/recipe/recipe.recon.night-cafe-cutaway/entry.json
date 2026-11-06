@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "recipe.recon.night-cafe-cutaway",
   "uid": "f7883d51-e34a-5f6d-a19c-645aed5547d4",
@@ -149,7 +149,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,6 +1,6 @@
-# No slop: the universal list (every style, 2D and 3D)
+﻿# No slop: the universal list (every style, 2D and 3D)
 
-The same rules as the app's own (`templates/studio/NO_SLOP.md` in Creatorize; sections 1-6 are kept word for word, keep
+The same rules as the app's own (`templates/studio/NO_SLOP.md` in berat; sections 1-6 are kept word for word, keep
 them in step), with section 7 in the kit's commands.
 
 Slop is anything a viewer reads as cheap, generic or machine-made: a decoration that carries no fact, a frame where

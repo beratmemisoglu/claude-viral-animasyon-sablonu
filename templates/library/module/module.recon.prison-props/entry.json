@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.recon.prison-props",
   "uid": "438f394e-11c4-507a-a190-cf1dcf68dc51",
@@ -123,7 +123,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

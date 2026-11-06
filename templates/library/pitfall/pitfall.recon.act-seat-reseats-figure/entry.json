@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.recon.act-seat-reseats-figure",
   "uid": "da9a39a9-8841-5b79-a3bf-eee83d832a00",
@@ -63,7 +63,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "rig and pose",
@@ -75,7 +75,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,9 +1,9 @@
----
+﻿---
 name: studio-starter
-description: Build a video, or grow a new style, on the Creatorize Suite STARTER engine - the plain Three.js base of the Style Studio, 2D (flat shapes in pixels) or 3D (lit solids on a ground, text on a HUD), 9:16 or 16:9, with word-timed shots, word-highlight captions, cut / dissolve / push transitions, a light film finish and the full set of checks behind check_layout. Use for any project whose style is "starter" or a style built on it.
+description: Build a video, or grow a new style, on the berat studio STARTER engine - the plain Three.js base of the Style Studio, 2D (flat shapes in pixels) or 3D (lit solids on a ground, text on a HUD), 9:16 or 16:9, with word-timed shots, word-highlight captions, cut / dissolve / push transitions, a light film finish and the full set of checks behind check_layout. Use for any project whose style is "starter" or a style built on it.
 ---
 
-# Studio starter (Creatorize Suite)
+# Studio starter (berat studio)
 
 The starter is a neutral engine with set rules. It has no look of its own: a style made in the Style Studio reshapes it
 through its extension points, never by rewriting it. Everything it draws is tagged so the checks can judge it.

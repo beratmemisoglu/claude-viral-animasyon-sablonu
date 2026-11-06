@@ -1,4 +1,4 @@
-# Interface size, workspace folder and logs
+﻿# Interface size, workspace folder and logs
 keywords: too small, too big, text too small, make text bigger, bigger text, font size, text size, zoom, zoom interface, interface scale, ui scale, scale, display, workspace, where are my files, where are my projects, project folder, files location, documents, storage, disk, open log, log file, logs, diagnostics, copy diagnostics, version
 platforms: both
 
@@ -12,7 +12,7 @@ Shortcuts anywhere in the app: Ctrl/⌘ + to make it bigger, Ctrl/⌘ - to make 
 
 ## Workspace
 
-The folder where every project folder and the app's own files live. By default it is the **Creatorize Suite** folder in your Documents.
+The folder where every project folder and the app's own files live. By default it is the **berat studio** folder in your Documents.
 
 - **Open** shows it (On Windows: in File Explorer / On Mac: in Finder).
 - The box under it shows what is inside.

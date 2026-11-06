@@ -1,4 +1,4 @@
-// Creatorize Suite engine - Stick stories. 16:9 "What if you..." story videos acted by black-silhouette stick people
+﻿// berat studio engine - Stick stories. 16:9 "What if you..." story videos acted by black-silhouette stick people
 // (round heads, white eye and mouth shapes, coloured clothes, coloured rim light) in flat-vector illustrated sets, with
 // HUD graphics, hand close-ups, maps and diagrams. A 2.5D cut-out theatre: flat vector cards at real depths seen by a
 // long-lens camera (parallax, depth of field), drawn crisp with 4x MSAA, then grain + vignette.

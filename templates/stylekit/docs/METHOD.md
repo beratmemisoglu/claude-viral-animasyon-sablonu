@@ -1,4 +1,4 @@
-# The method: building a style, stage by stage
+﻿# The method: building a style, stage by stage
 
 This is how a style is built in the kit. Every stage has inputs, the files it produces, the command that proves it, a
 gate (the exit condition), the typical failure and a time budget. Do the stages in order. Going back to an earlier stage
@@ -14,7 +14,7 @@ Where this file says `cz <command>`, run the wrapper for your shell (CLAUDE.md, 
 
 ## The style folder
 
-`cz new <name> --base <b> [--aspects 16:9,9:16] [--dim 2d|3d]` makes `styles/<name>/`, laid out like a Creatorize
+`cz new <name> --base <b> [--aspects 16:9,9:16] [--dim 2d|3d]` makes `styles/<name>/`, laid out like a berat
 project so the real host page, render path and checks run on it:
 
 | Path | What | Who writes it |
@@ -72,7 +72,7 @@ look sets: "this change is hidden by the look". Move that value into style.json 
    member before building anything on it.
 5. Make a save point: `git init` inside `styles/<name>/` with a `.gitignore` of `.cz/stills/`, `out/`,
    `reference/shots/`, `reference/sheets/` and `review/`, and commit after every approved stage (git comes with
-   Creatorize's installer). "Go back to before the fonts change" is then one command.
+   berat's installer). "Go back to before the fonts change" is then one command.
 
 **Gate:** the style folder exists and its untouched copy has no high finding.
 
@@ -279,7 +279,7 @@ once per aspect; `cz preview <style> sample` for the member.
 **Typical failure:** stopping at "clean" (checks catch layout, not taste); numbers that fit one aspect only (x = 700 is
 off-frame in 9:16: derive from W, H, ZONE, SAFE or the base's layout values); a new element kind invented here.
 
-The member's own narration for the sample: they make a Creatorize project with that voice-over (the app transcribes it),
+The member's own narration for the sample: they make a berat project with that voice-over (the app transcribes it),
 and you copy its `audio/timeline.json` into the style's `audio/` and its `script.txt` into the style folder. Never edit
 timings by hand.
 

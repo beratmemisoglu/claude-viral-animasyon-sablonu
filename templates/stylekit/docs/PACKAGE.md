@@ -1,7 +1,7 @@
-# The package: what goes to the app, what the app checks, versions and engine updates
+﻿# The package: what goes to the app, what the app checks, versions and engine updates
 
 `cz package <style>` turns `styles/<name>/` into `dist/<id>/` and `dist/<id>.zip`. The member imports the zip in
-Creatorize (Styles > Custom > Import style). This file says what is inside, what the app does with it, and how versions
+berat (Styles > Custom > Import style). This file says what is inside, what the app does with it, and how versions
 and engine updates work.
 
 ## What is inside

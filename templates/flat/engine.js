@@ -1,4 +1,4 @@
-// Creatorize Suite engine - Flat explainer. Flat-vector explainer animation in Three.js (9:16 shorts or 16:9 videos):
+﻿// berat studio engine - Flat explainer. Flat-vector explainer animation in Three.js (9:16 shorts or 16:9 videos):
 // orthographic, unlit, exact flat colours, one light source (top-left) for all shading, rounded primitives, word-timed
 // motion, dissolve transitions, word-highlight captions in a reserved band, film finish (grain + vignette).
 // Coordinates: pixels, origin at the frame centre, y up. The frame is 1080 x 1920 (vertical) or 1920 x 1080 (landscape,
@@ -438,7 +438,7 @@ export function captions(root, chunks, { y = -610, size = 56 } = {}) {
 }
 
 // =====================================================================================================================
-// Creatorize Suite app layer: shots, motion, camera, transitions, captions, finish, export, sound events, layout check
+// berat studio app layer: shots, motion, camera, transitions, captions, finish, export, sound events, layout check
 // =====================================================================================================================
 export const ENGINE_KIND = 'flat';
 export const ENGINE_VERSION = 7;                // bump when the Suite ships engine changes (projects get an Update button)

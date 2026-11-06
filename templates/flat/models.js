@@ -1,4 +1,4 @@
-// Creatorize Suite - Flat explainer model library: the character rig (any look: the project's main character, Mo, or
+﻿// berat studio - Flat explainer model library: the character rig (any look: the project's main character, Mo, or
 // a generated one), the icon kit and helpers. Every element here passed the element gate (QUALITY_STANDARD.md): one
 // light (top-left), shading cut from the outline.
 // New elements you add: build them with shaded()/ball()/crescent()/clipPts(), mark shading with withRole('detail'),

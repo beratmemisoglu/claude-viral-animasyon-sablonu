@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.any.windows-toolchain-traps",
   "uid": "cc172a1a-0ace-5ab2-a6c3-234ca45995e6",
@@ -66,7 +66,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#24, #25",
@@ -76,7 +76,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
       "lines": "#11",
@@ -86,7 +86,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "tool chain",
@@ -98,7 +98,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

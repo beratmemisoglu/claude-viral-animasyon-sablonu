@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.recon.collide-must-be-declared",
   "uid": "32880423-33d2-5732-a955-60cd0543a8d4",
@@ -62,7 +62,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "results (café V1), loop 4",
@@ -74,7 +74,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

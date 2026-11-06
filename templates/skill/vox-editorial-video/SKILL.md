@@ -1,9 +1,9 @@
----
+﻿---
 name: vox-editorial-video
-description: Build a Vox-style editorial collage explainer (vertical 9:16 shorts or 16:9) from a timed voiceover, entirely procedurally in Three.js - paper and grid boards, cut-out stickers and printed halftone/duotone "photos", pins, tape, marker annotations, Vox text animators, constant camera drift, cut-the-curve and rack-focus transitions, grain and halftone texture, tactile sound design. Use for any project whose style is "vox" in Creatorize Suite.
+description: Build a Vox-style editorial collage explainer (vertical 9:16 shorts or 16:9) from a timed voiceover, entirely procedurally in Three.js - paper and grid boards, cut-out stickers and printed halftone/duotone "photos", pins, tape, marker annotations, Vox text animators, constant camera drift, cut-the-curve and rack-focus transitions, grain and halftone texture, tactile sound design. Use for any project whose style is "vox" in berat studio.
 ---
 
-# Vox editorial video (Creatorize Suite)
+# Vox editorial video (berat studio)
 
 The app has already done the setup: `engine.js`, `models.js`, `fonts/`, `vendor/` exist; `audio/clean.wav`,
 `audio/timeline.json` and `audio/script_timed.txt` are ready; `project.json` has `end` and the look (`settings`).

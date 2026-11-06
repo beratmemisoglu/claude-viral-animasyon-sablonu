@@ -1,6 +1,6 @@
----
+﻿---
 name: toon-shorts
-description: Build 3D cartoon shorts in Creatorize Suite with the toon engine - our own big-headed cartoon characters with painted, expressive faces (expression sprites), densely dressed sets, smooth pose-to-pose character animation timed to the words, a camera that never stops, 6-frame dissolves, depth of field and bloom, captions drawn by the engine. 9:16 (1080x1920) first, 16:9 too. Use for every build, edit and Ultraedit of a "3D cartoon shorts" project (style id toon).
+description: Build 3D cartoon shorts in berat studio with the toon engine - our own big-headed cartoon characters with painted, expressive faces (expression sprites), densely dressed sets, smooth pose-to-pose character animation timed to the words, a camera that never stops, 6-frame dissolves, depth of field and bloom, captions drawn by the engine. 9:16 (1080x1920) first, 16:9 too. Use for every build, edit and Ultraedit of a "3D cartoon shorts" project (style id toon).
 ---
 
 # 3D cartoon shorts (toon-shorts)

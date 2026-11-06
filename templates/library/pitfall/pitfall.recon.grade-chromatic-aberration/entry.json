@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.recon.grade-chromatic-aberration",
   "uid": "5ab0f9fb-8144-5b79-a8d2-cc63b607f9b3",
@@ -63,7 +63,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#30",
@@ -75,7 +75,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

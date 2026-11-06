@@ -1,11 +1,11 @@
-# Creatorize Style Kit
+﻿# berat Style Kit
 
-This folder is where you build your own Creatorize video styles with Claude Code. It holds Creatorize's real engines,
+This folder is where you build your own berat video styles with Claude Code. It holds berat's real engines,
 the same checks the app runs, and the instructions Claude follows. When a style is ready, Claude packs it into one file
-and you import it in Creatorize (Styles > Custom > Import style).
+and you import it in berat (Styles > Custom > Import style).
 
-The full guide is **Creatorize Style Kit Guide.pdf** in this folder (also `docs/GUIDE.md`). The kit is part of your
-Creatorize membership and is for building styles for Creatorize: read **TERMS.md** (short).
+The full guide is **berat Style Kit Guide.pdf** in this folder (also `docs/GUIDE.md`). The kit is part of your
+berat membership and is for building styles for berat: read **TERMS.md** (short).
 
 ## Start in 3 steps
 
@@ -37,4 +37,4 @@ Claude shows you frames to approve along the way. When you're happy, say "Packag
 | `refs/` | your references (never put into a package) |
 | `bases/`, `tools/`, `docs/` | the engines, the kit commands and the instructions (don't edit) |
 
-Getting the kit again from Creatorize into this same folder refreshes the engines and keeps `styles/` and `dist/`.
+Getting the kit again from berat into this same folder refreshes the engines and keeps `styles/` and `dist/`.

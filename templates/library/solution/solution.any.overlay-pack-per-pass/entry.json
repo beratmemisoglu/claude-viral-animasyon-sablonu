@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "solution.any.overlay-pack-per-pass",
   "uid": "3d1c9ea5-df95-531a-aaf9-3d8a83b65372",
@@ -65,7 +65,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "loop 5",
@@ -75,7 +75,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
       "lines": "#23, rec 2",
@@ -85,7 +85,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#26, rec 6",
@@ -97,7 +97,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

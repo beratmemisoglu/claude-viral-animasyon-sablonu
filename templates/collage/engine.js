@@ -1,4 +1,4 @@
-// Creatorize Suite engine - Vox collage (v1): newspaper cut-out, mixed-media collage explainers.
+﻿// berat studio engine - Vox collage (v1): newspaper cut-out, mixed-media collage explainers.
 // The whole video is ONE broadsheet page. Each chapter is a panel on it; the camera whip-pans from panel to panel
 // (real motion blur), and the finale pulls back to the full front page (masthead, every panel in its final state), then
 // pushes back into the first panel so the last frame IS the first frame: the video loops, never a hard cut.

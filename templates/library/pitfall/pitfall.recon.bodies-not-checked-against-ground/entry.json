@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pitfall.recon.bodies-not-checked-against-ground",
   "uid": "b8a3ee24-9055-56a3-acfb-1a6ae6f22c3d",
@@ -63,7 +63,7 @@
   "preview": null,
   "provenance": [
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
       "lines": "#12",
@@ -73,7 +73,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
       "lines": "#19",
@@ -83,7 +83,7 @@
       "by": "seed"
     },
     {
-      "project": "creatorize-suite (repo)",
+      "project": "berat-studio (repo)",
       "projectId": null,
       "file": "docs/SHOT_MATCH_LOOP.md",
       "lines": "checker blind spots",
@@ -95,7 +95,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

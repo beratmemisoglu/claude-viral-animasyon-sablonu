@@ -1,6 +1,6 @@
----
+﻿---
 name: mega-informational
-description: Build "3D Informational" videos in Creatorize Suite with the Blender engine - realistic megaproject explainers where every clause of the narration is one step of a giant engineering idea built on screen (machines dig, lift, wrap, drill, float), in realistic EEVEE (engine/mega.py - physical sky and hard sun, PBR rock / snow / steel / water, detailed hard-surface models, green see-through X-ray on the thing the narration names), with one calm, continuous camera move per shot. 9:16 (1080x1920) or 16:9. Use for every build, edit and Ultraedit of a "3D Informational" project (style id mega).
+description: Build "3D Informational" videos in berat studio with the Blender engine - realistic megaproject explainers where every clause of the narration is one step of a giant engineering idea built on screen (machines dig, lift, wrap, drill, float), in realistic EEVEE (engine/mega.py - physical sky and hard sun, PBR rock / snow / steel / water, detailed hard-surface models, green see-through X-ray on the thing the narration names), with one calm, continuous camera move per shot. 9:16 (1080x1920) or 16:9. Use for every build, edit and Ultraedit of a "3D Informational" project (style id mega).
 ---
 
 # 3D Informational on the Blender engine (mega-informational)

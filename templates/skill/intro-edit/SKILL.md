@@ -1,6 +1,6 @@
----
+﻿---
 name: intro-edit
-description: Edit a video's intro read into a finished, Apple-launch style opening - animated text and graphics synced to the speech on a HyperFrames 4K canvas (three speed graphs, overlapping nulls, word ramps, subtle zooms, footage untouched) - then give it a sound-effects pass keyed to every animation (whooshes on their peak, clicks on their landing frame). One workflow, delivered as work/intro/output.mp4 + work/intro/output.sfx.wav. Used by Creatorize Suite's "Edit the intro" button in Personal Brand projects.
+description: Edit a video's intro read into a finished, Apple-launch style opening - animated text and graphics synced to the speech on a HyperFrames 4K canvas (three speed graphs, overlapping nulls, word ramps, subtle zooms, footage untouched) - then give it a sound-effects pass keyed to every animation (whooshes on their peak, clicks on their landing frame). One workflow, delivered as work/intro/output.mp4 + work/intro/output.sfx.wav. Used by berat studio's "Edit the intro" button in Personal Brand projects.
 ---
 
 # Intro edit (motion graphics + sound effects)
@@ -39,7 +39,7 @@ big blurs, glows, crossfades, idle wobble and camera shake are banned.
 - **One continuous feel:** the next card enters while the previous exits (midpoint overlap), sounds on every move.
 Its sound cue names come from the user's old paid library; use the names from `sfx_mix.py --list` instead.
 
-## Inside Creatorize Suite
+## Inside berat studio
 - **Finish before you stop.** The session ends when your turn ends, and anything still running is killed. Never end
   your turn with a command running in the background; wait for it (step 7 shows how for the render).
 - **Input:** `media.json` in the project folder (the current directory). The file with `role: "intro"` (not `derived`)
@@ -65,7 +65,7 @@ SK="$CZ_SKILL/scripts"
 cd work/intro
 ```
 Prints the source, the render copy, the transcript with times, and the study stills. If it says **NEEDS NODE**, stop
-and tell the user: HyperFrames needs Node.js; running the Creatorize installer again adds it.
+and tell the user: HyperFrames needs Node.js; running the berat installer again adds it.
 
 ### 2. Clean the read (only if needed)
 Read the transcript. If the read contains false starts, restarts, a flubbed line said twice, or long dead air at the

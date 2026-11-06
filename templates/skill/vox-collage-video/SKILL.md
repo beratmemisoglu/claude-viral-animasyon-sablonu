@@ -1,9 +1,9 @@
----
+﻿---
 name: vox-collage-video
-description: Build a Vox newspaper-collage explainer in Creatorize Suite from a timed voiceover - one broadsheet front page with a panel per chapter, cut-out engraving images made on the user's Higgsfield account (real transparency, about a cent each), torn paper, ransom-note letters, handwriting written by a quill, typewriter labels, inked stamps, marker circles, counters, pins; smooth camera moves between panels and a front-page finale that loops into the first frame. Use for any project whose style is "collage" (shown to the user as "Vox").
+description: Build a Vox newspaper-collage explainer in berat studio from a timed voiceover - one broadsheet front page with a panel per chapter, cut-out engraving images made on the user's Higgsfield account (real transparency, about a cent each), torn paper, ransom-note letters, handwriting written by a quill, typewriter labels, inked stamps, marker circles, counters, pins; smooth camera moves between panels and a front-page finale that loops into the first frame. Use for any project whose style is "collage" (shown to the user as "Vox").
 ---
 
-# Vox collage video (Creatorize Suite)
+# Vox collage video (berat studio)
 
 The app has already done the setup: `engine.js`, `models.js`, `fonts/`, `vendor/` exist; `audio/clean.wav`,
 `audio/timeline.json` and `audio/script_timed.txt` are ready; `project.json` has `end` and the look (`settings`).

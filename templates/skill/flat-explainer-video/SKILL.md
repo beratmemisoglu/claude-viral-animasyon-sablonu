@@ -1,9 +1,9 @@
----
+﻿---
 name: flat-explainer-video
-description: Build a flat-vector explainer (9:16 short or 16:9 video) in Creatorize Suite from a timed voiceover - bright rounded shapes with one consistent light, the project's own main character with real follow-through (blinks, drag, squash and stretch, expressions that change through in-betweens), icons, diagrams and labels that land on the spoken word, lines that draw on and land, particle bursts, dissolves between scenes, word-highlight captions in a reserved band and a soft film finish. Everything procedural in Three.js, no images. Use for any project whose style is "flat" (shown to the user as "Flat explainer").
+description: Build a flat-vector explainer (9:16 short or 16:9 video) in berat studio from a timed voiceover - bright rounded shapes with one consistent light, the project's own main character with real follow-through (blinks, drag, squash and stretch, expressions that change through in-betweens), icons, diagrams and labels that land on the spoken word, lines that draw on and land, particle bursts, dissolves between scenes, word-highlight captions in a reserved band and a soft film finish. Everything procedural in Three.js, no images. Use for any project whose style is "flat" (shown to the user as "Flat explainer").
 ---
 
-# Flat explainer video (Creatorize Suite)
+# Flat explainer video (berat studio)
 
 The app has already done the setup: `engine.js`, `models.js`, `fonts/`, `vendor/` exist; `audio/clean.wav`,
 `audio/timeline.json` and `audio/script_timed.txt` are ready; `project.json` has `end` and the look (`settings`, incl.

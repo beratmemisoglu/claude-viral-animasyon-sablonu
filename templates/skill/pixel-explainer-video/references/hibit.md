@@ -1,6 +1,6 @@
-# Engine v10: Hi-Bit pixel art, libraries, full-screen b-roll, the layout check
+﻿# Engine v10: Hi-Bit pixel art, libraries, full-screen b-roll, the layout check
 
-Read this before writing any scene in the Creatorize Suite. It wins over older advice in this skill (320x180 and "strict
+Read this before writing any scene in the berat studio. It wins over older advice in this skill (320x180 and "strict
 16 colours" describe the legacy looks; they still work, unchanged).
 
 ## 1. The look

@@ -1,4 +1,4 @@
-# Claude usage on Home: tokens, models and charts
+﻿# Claude usage on Home: tokens, models and charts
 keywords: usage, claude usage, your claude usage, tokens, tokens used, how many tokens, token count, runs, from cache, cache, favourite model, which model, models chart, top projects, most tokens, usage chart, per day, per month, today, 7 days, 30 days, all time, model not recorded, removed project, nothing yet, usage stats, numbers wrong, used too much
 platforms: both
 
@@ -33,4 +33,4 @@ Your first Claude edit or build shows up here.
 ## Good to know
 
 - To change which model Claude uses and how hard it thinks, see "Model and effort (which Claude, how hard it thinks)".
-- This is your Claude plan's usage, not your Creatorize plan (Standard or Premium).
+- This is your Claude plan's usage, not your berat plan (Standard or Premium).

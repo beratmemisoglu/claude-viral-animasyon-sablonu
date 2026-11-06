@@ -1,4 +1,4 @@
-# python fetch_model.py <project> <url> <file.glb> --title "..." --author "..." --license "CC0 1.0" --source "<page url>" [--notes "..."]
+﻿# python fetch_model.py <project> <url> <file.glb> --title "..." --author "..." --license "CC0 1.0" --source "<page url>" [--notes "..."]
 # Downloads one free 3D model (or texture) into <project>/assets/models/<file> and records its credit in
 # assets/models/CREDITS.json (the video description names every artist from it). Refuses licences that are not
 # CC0 / public domain / CC-BY (no NC, no ND, no "editorial", no unclear terms) and files that are not glTF binary / gltf /
@@ -16,7 +16,7 @@ ext = os.path.splitext(a.file)[1].lower()
 if ext not in ('.glb', '.gltf', '.bin', '.jpg', '.jpeg', '.png'): sys.exit('Only .glb / .gltf (+ .bin) / .jpg / .png files.')
 d = os.path.join(os.path.abspath(a.project), 'assets', 'models'); os.makedirs(d, exist_ok=True)
 out = os.path.join(d, a.file)
-data = urllib.request.urlopen(urllib.request.Request(a.url, headers={'User-Agent': 'CreatorizeSuite/recon (free 3D models)'}), timeout=180).read()
+data = urllib.request.urlopen(urllib.request.Request(a.url, headers={'User-Agent': 'beratSuite/recon (free 3D models)'}), timeout=180).read()
 if ext == '.glb' and data[:4] != b'glTF': sys.exit('Not a binary glTF file (the URL returned something else, e.g. a web page). Find the direct download link.')
 if len(data) > 40e6: sys.exit(f'{len(data) / 1e6:.0f} MB is too big for a scene asset (limit 40 MB): pick a lighter model.')
 open(out, 'wb').write(data)

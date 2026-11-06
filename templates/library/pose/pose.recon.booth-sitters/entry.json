@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.booth-sitters",
   "uid": "d3d650ed-10a6-5e3d-a3da-fa485d9533ee",
@@ -94,7 +94,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,4 +1,4 @@
-# Graphics: graphics card, Safe display or software (black preview, dark window, WebGL error)
+﻿# Graphics: graphics card, Safe display or software (black preview, dark window, WebGL error)
 keywords: graphics, graphics card, gpu, webgl, can't create webgl, error creating webgl context, black preview, preview black, preview blank, preview not showing, software, software graphics, automatic, safe display, swiftshader, driver, old driver, opencore, opencore legacy patcher, old mac, restart for software graphics, restart now, remote desktop, slow export, exports slow, keep software graphics, try the graphics card again, dark window
 platforms: both
 
@@ -22,7 +22,7 @@ After you switch, it says "Restart the app to use …" with **Restart now**. The
 
 If the graphics card can't start the 3D preview, the app switches to software for the next start and says so once ("This computer's graphics can't draw the 3D preview, so the app switched to software graphics…"). Click **Restart now**. Settings then adds: "The app switched to software by itself because the graphics card could not start the 3D preview."
 
-If the window stayed dark, the app (or the Creatorize Launcher) switches to Safe display on Windows, or to software graphics on a Mac, and Settings says so.
+If the window stayed dark, the app (or the berat Launcher) switches to Safe display on Windows, or to software graphics on a Mac, and Settings says so.
 
 ## After an update
 

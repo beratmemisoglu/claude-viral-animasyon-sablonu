@@ -1,4 +1,4 @@
-// Creatorize Suite engine (pixel-explainer v2): pixel-art 3D (configurable art resolution, HUD in 320x180 units,
+﻿// berat studio engine (pixel-explainer v2): pixel-art 3D (configurable art resolution, HUD in 320x180 units,
 // 16-colour palette, faceted ramps, cast shadows, depth + object-ID outlines, rim light, dithered skies/fog) +
 // a 1080p HUD in retro fonts, a shot system with 5 dithered transition styles, word-synced cues, real-image
 // cards, an event pass for sound design, WebCodecs H.264 export, and picking hooks for the Suite editor.

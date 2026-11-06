@@ -1,4 +1,4 @@
-// Creatorize Suite - Vox style model library: tactile collage props and procedural illustrations.
+﻿// berat studio - Vox style model library: tactile collage props and procedural illustrations.
 // Everything returns a THREE.Object3D; place it, then S.add(obj, { at, in }). Units: the frame is 9 x 16 (vertical).
 // "Upright" 3D props (typewriter, keycaps, coins standing) are built Y-up and wrapped so their top faces the camera
 // (the board is the XY plane, the camera looks down -Z). Name props on `st` so the editor's clicks resolve.

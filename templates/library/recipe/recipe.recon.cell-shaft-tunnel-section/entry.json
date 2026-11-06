@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "recipe.recon.cell-shaft-tunnel-section",
   "uid": "b2b018d5-1939-58e7-a19d-143f2657de43",
@@ -145,7 +145,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

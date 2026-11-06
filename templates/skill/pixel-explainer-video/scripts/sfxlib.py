@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 """Recorded sound effects for every style's sound designer: the built-in CC0 / public-domain library
 (templates/lowpoly/library/sfx) merged with the user's own library (<workspace>/assets/sfx, Settings > Media > Sound
 effects library). Both have an index.json {"entries": [{id, category, tags, file, duration, licence, author, source_url,
@@ -17,7 +17,7 @@ library (nothing built-in, nothing synthesized); off = no effects at all. The In
 import hashlib, json, os, random, re, subprocess
 import numpy as np
 
-B0, B1 = '--- sound effect credits (kept up to date by Creatorize) ---', '--- end of sound effect credits ---'
+B0, B1 = '--- sound effect credits (kept up to date by berat) ---', '--- end of sound effect credits ---'
 HERE = os.path.dirname(os.path.abspath(__file__))
 BUILTIN = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'lowpoly', 'library', 'sfx'))
 

@@ -1,4 +1,4 @@
-# Google models via CLIProxyAPI (experimental)
+﻿# Google models via CLIProxyAPI (experimental)
 keywords: gemini, gemini 4, gemini 4 argon, argon, gemini flash, google models, google ai, google ai pro, google ai ultra, ultra, antigravity, cliproxy, cliproxyapi, proxy, experimental, other models, use gemini, google account blocked, banned, requests a day, limit, switch account, turn off, remove
 platforms: both
 
@@ -9,7 +9,7 @@ platforms: both
 - **It can get your Google account blocked.** Google has blocked paid accounts for this before, without refunds.
 - Use a **separate Google account**, not the one with your YouTube channel or Gmail.
 - **One Google account only.** Never sign in several to stretch the quota.
-- It can stop working any day. Creatorize does not support it and can't help if Google blocks you.
+- It can stop working any day. berat does not support it and can't help if Google blocks you.
 - Offered on Windows (64-bit) and macOS only.
 
 ## Models and limits

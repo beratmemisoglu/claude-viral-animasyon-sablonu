@@ -1,7 +1,7 @@
-"""Shared helpers. Every script runs with CWD = the work folder (Creatorize Suite: <project>/work; standalone:
+﻿"""Shared helpers. Every script runs with CWD = the work folder (berat studio: <project>/work; standalone:
 <footage folder>/Edit/work) and reads project.json there.
 
-Deliverables go to OUT: $CZ_OUT when set (Creatorize Suite: <project>/out/edit), else the folder above work/.
+Deliverables go to OUT: $CZ_OUT when set (berat studio: <project>/out/edit), else the folder above work/.
 Every quality gate records its result in gates.json (read by finalize.py)."""
 import json, os, subprocess, sys, time
 from fractions import Fraction
@@ -40,7 +40,7 @@ def _parakeet():
 
 def asr_base(p=None):
     """Local ASR command, never cloud. Order: project.json asr_python / asr_script; the app's choice
-    (CZ_ASR_PYTHON / CZ_ASR_SCRIPT, set by Creatorize Suite); the user's Parakeet; else the bundled Whisper fallback
+    (CZ_ASR_PYTHON / CZ_ASR_SCRIPT, set by berat studio); the user's Parakeet; else the bundled Whisper fallback
     (asr_whisper.py, same output format) on this Python."""
     p = p or {}
     py, sc = p.get('asr_python') or os.environ.get('CZ_ASR_PYTHON'), p.get('asr_script') or os.environ.get('CZ_ASR_SCRIPT')

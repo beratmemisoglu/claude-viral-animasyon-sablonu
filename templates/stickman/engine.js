@@ -1,4 +1,4 @@
-// Creatorize Suite - Stickman (MS Paint) engine. Scenes are written in the shot language (lib/scene.js):
+﻿// berat studio - Stickman (MS Paint) engine. Scenes are written in the shot language (lib/scene.js):
 //   import { script } from '../engine.js';
 //   script(`
 //   cast ali desc="an archaeologist: tan skin, yellow hard hat, round glasses"

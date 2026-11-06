@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.recon.rig-pose",
   "uid": "994f90a3-0673-5a0f-aebf-ddaadeaf750c",
@@ -134,7 +134,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

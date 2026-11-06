@@ -1,4 +1,4 @@
----
+﻿---
 name: talking-head-edit
 description: Edit raw talking-head / tutorial footage end to end - a screen recording (with the good mic audio) plus one or MANY facecam clips - into two frame-synced, Resolve-ready files with every restart, false start, blooper, dead air and junk removed, 20 ms crossfades, and lipsync verified. Use whenever the user gives a screen recording + facecam file(s) and says "run the editing workflow", "same editing workflow", "edit this / cut the restarts / sync these", "remove the bad takes", or hands over raw recording files. Also covers re-cuts of an existing edit and the follow-up "chapters + SEO tags" for the final export.
 ---
@@ -22,7 +22,7 @@ The user's own words for the job:
 > Give progress reports. Export the screen recording and the facecam separately so I can overlay them in Resolve.
 > Multiple facecams (camera stopped during generation waits) -> output ONE facecam file.
 
-## Deliverables (folder OUT: `<footage folder>\Edit\` standalone, `$CZ_OUT` in Creatorize Suite)
+## Deliverables (folder OUT: `<footage folder>\Edit\` standalone, `$CZ_OUT` in berat studio)
 | File | Spec |
 |---|---|
 | `ScreenRecording_Edited.mov` | source resolution/fps, H.264 (NVENC cq18), 24-bit PCM edited audio |
@@ -31,7 +31,7 @@ The user's own words for the job:
 
 Same length, same start: both go on the timeline at 0. Working files stay in the work folder.
 
-## Inside Creatorize Suite (read first: overrides the rest of this file where they differ)
+## Inside berat studio (read first: overrides the rest of this file where they differ)
 The Suite ran you in a Personal Brand project. Differences from the standalone workflow:
 - **Inputs:** `media.json` in the project folder (the current directory). `role: "screen"` = the screen recording with the
   good mic (the master), `role: "facecam"` = camera clips (pass every one), `role: "intro"` = the intro read (it has its
@@ -57,7 +57,7 @@ The Suite ran you in a Personal Brand project. Differences from the standalone w
 - ASR is local only, never cloud: `common.run_asr` picks the user's Parakeet (`~/tools/parakeet`), the app's
   transcriber (`CZ_ASR_PYTHON`/`CZ_ASR_SCRIPT`) or the bundled Whisper fallback. Same output format for all.
 - `SK="$HOME/.claude/skills/talking-head-edit/scripts"` standalone; `SK="$CZ_SKILL/scripts"` and `"$CZ_PYTHON"`
-  instead of `python` in Creatorize Suite. Run every script with CWD = the work folder.
+  instead of `python` in berat studio. Run every script with CWD = the work folder.
 - Quote every path (spaces and `;` are common). Long steps (per-utterance ASR 3-5 min per hour of recording with Parakeet, video render 5-20 min):
   run in the background, wait with an until-loop, keep the user posted, **never end your turn while one runs.**
 

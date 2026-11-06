@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.recon.cafe-props",
   "uid": "d83f60b6-3788-565c-abc5-0398bdd12dbb",
@@ -118,7 +118,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.bars-reacher",
   "uid": "6b36b9a8-55df-5ee2-a5e6-49b83d56d58e",
@@ -86,7 +86,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

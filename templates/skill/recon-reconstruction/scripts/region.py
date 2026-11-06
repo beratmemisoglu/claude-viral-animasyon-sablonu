@@ -1,4 +1,4 @@
-# python region.py <project-dir> <name> --lat 47.269 --lon -122.5517 --half 7.5 [--layers coast,parks] [--zoom 13] [--water-level 0]
+﻿# python region.py <project-dir> <name> --lat 47.269 --lon -122.5517 --half 7.5 [--layers coast,parks] [--zoom 13] [--water-level 0]
 # One command for a real map of any place on Earth, as the reconstruction engine uses it (loadWorld / terrainMesh):
 #  1. elevation: AWS Terrain Tiles (Terrarium PNG; SRTM, GMTED, ETOPO and others) over the square of `half` km around the centre
 #  2. map layers: OpenStreetMap via the Overpass API (ODbL; several public mirrors, retried), only the layers you list
@@ -46,7 +46,7 @@ for l in layers:
     for attempt in range(6):
         url = MIRRORS[attempt % len(MIRRORS)]
         try:
-            txt = urllib.request.urlopen(urllib.request.Request(url, data=body, headers={'User-Agent': 'CreatorizeSuite/recon (map research)'}), timeout=180).read()
+            txt = urllib.request.urlopen(urllib.request.Request(url, data=body, headers={'User-Agent': 'beratSuite/recon (map research)'}), timeout=180).read()
             json.loads(txt); open(f, 'wb').write(txt); print(l, len(json.loads(txt)['elements']), 'elements'); break
         except Exception as e:
             print(l, 'retry', attempt + 1, url.split('/')[2], str(e)[:80]); time.sleep(4 + attempt * 4)

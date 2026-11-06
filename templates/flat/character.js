@@ -1,4 +1,4 @@
-// The project's main character: character(p) in models.js draws this one. Creatorize Suite writes this file when the
+﻿// The project's main character: character(p) in models.js draws this one. berat studio writes this file when the
 // project is made (the user's default character, a random new one, or one Claude designed in a character lab).
 //   name   what the narration and storyboard call them
 //   look   traits drawn by the rig in models.js (TRAITS lists every hair, top and extra it can draw)

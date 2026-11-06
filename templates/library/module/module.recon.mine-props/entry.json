@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.recon.mine-props",
   "uid": "bddd98f4-a273-5321-ac3f-818578ff007e",
@@ -115,7 +115,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,9 +1,9 @@
----
+﻿---
 name: recon-reconstruction
-description: Build a narrated 3D reconstruction documentary (matte clay Three.js scenes in a seamless high-key studio, real maps from OpenStreetMap and elevation data, real photos and footage, free downloaded 3D models, the user's mannequin characters (figure(role)), black name tags and news-desk cards; or, in the Investigation look, a dark, cinematic investigative documentary on any topic with faceless mannequins, full-screen archive, pinned boards, red-grid networks and evidence desks) inside Creatorize Suite, and sign it off with the automatic checks and a frame-by-frame review before anything is rendered.
+description: Build a narrated 3D reconstruction documentary (matte clay Three.js scenes in a seamless high-key studio, real maps from OpenStreetMap and elevation data, real photos and footage, free downloaded 3D models, the user's mannequin characters (figure(role)), black name tags and news-desk cards; or, in the Investigation look, a dark, cinematic investigative documentary on any topic with faceless mannequins, full-screen archive, pinned boards, red-grid networks and evidence desks) inside berat studio, and sign it off with the automatic checks and a frame-by-frame review before anything is rendered.
 ---
 
-# 3D reconstruction documentary (Creatorize Suite)
+# 3D reconstruction documentary (berat studio)
 
 The look: the "what really happened" reconstruction channels. Real events re-staged as matte off-white clay models in a
 seamless grey studio, high key and natural (soft key light, ambient occlusion, almost no post), with black name tags on

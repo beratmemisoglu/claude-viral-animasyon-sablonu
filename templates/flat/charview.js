@@ -1,4 +1,4 @@
-// Character viewer (Creatorize Suite, flat style): served at /c/<id>/charview.html next to that character's character.js
+﻿// Character viewer (berat studio, flat style): served at /c/<id>/charview.html next to that character's character.js
 // (models.js imports it), with the engine and models of the app's flat template. Used by the app for:
 //   live preview (default)      the character idling through poses and expressions (the Characters tab, New project)
 //   window.still(look?, o)      a thumbnail (PNG data URL)

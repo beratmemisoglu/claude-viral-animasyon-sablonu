@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "module.any.relief",
   "uid": "81957e14-6d7b-58d7-ade3-09f6ec9e30e0",
@@ -110,7 +110,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "look.recon.shot-match-neutral",
   "uid": "3654c6e2-b78f-575e-a50c-99570eb0ff11",
@@ -95,7 +95,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,4 +1,4 @@
----
+﻿---
 name: pixel-explainer-video
 description: Turn a voiceover audio file into a finished, fully produced explainer video in a 3D pixel-art style (Three.js rendered at 320x180 on a strict 16-colour palette, cast shadows, outlines, dithered skies) with a clean retro-font HUD, real images of the games/people/companies mentioned, word-synced animation, synthesized ambience and SFX, and a fast headless render. Use this whenever the user gives an audio/narration/voiceover file and wants a video made from it, asks for "the pixel art style", "the PS2 video style", "like the last video", a pixel-art or retro 3D explainer, or wants any topic visualized from narration - even if they only say "make the video from this mp3". Handles everything from scratch - installing dependencies, audio cleanup, transcription, alignment, storyboarding, scene building, visual QA, sound design, mixing, rendering and delivery.
 ---
@@ -13,7 +13,7 @@ scenes have depth and character, text is readable, nothing is decorative noise. 
 about writing more code - it's about the review loops below. Budget real time for them.
 
 ## 0. Orientation (read first)
-- **`references/hibit.md` - engine v10 (READ FIRST in the Creatorize Suite): the Hi-Bit look (~100 colours, 5 shading steps),
+- **`references/hibit.md` - engine v10 (READ FIRST in the berat studio): the Hi-Bit look (~100 colours, 5 shading steps),
   the libraries (props, sets, camera moves, people rigs and motion), full-screen b-roll, the layout check, and the variety
   rules. It wins over older advice below (320x180 / strict 16 colours describe the legacy look only).**
 - `references/style_guide.md` - the visual language and the quality bar (read before building any scene).

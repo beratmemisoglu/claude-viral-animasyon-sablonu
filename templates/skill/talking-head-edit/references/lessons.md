@@ -1,4 +1,4 @@
-# Lessons - every failure seen so far and what the scripts now do about it
+﻿# Lessons - every failure seen so far and what the scripts now do about it
 
 | # | Symptom | Cause | Built-in fix |
 |---|---|---|---|
@@ -17,13 +17,13 @@
 | 13 | 15-20 ms lipsync outliers | pitch-period ambiguity in sample-level correlation | Envelope-based lipsync; outliers re-measured independently at 48 kHz |
 | 14 | Re-measure of an outlier gave garbage | camera excerpt started after the span's camera time | Always compute the camera time first and cut the excerpt around it |
 | 15 | Restarts inside one breath survived the first cut (5-9 per project) | silence-based cutting can't see them | Script-first: only listed words exist; check_edit.py reads the edit back |
-| 16 | Aligner showed only one "it" in "it it", one "Creatorize" in a restarted phrase | forced aligner normalizes disfluencies | build_cut.py cuts at the dip before the kept word when new sound follows; check_edit.py fails on unaccounted sound / hidden words |
+| 16 | Aligner showed only one "it" in "it it", one "berat" in a restarted phrase | forced aligner normalizes disfluencies | build_cut.py cuts at the dip before the kept word when new sound follows; check_edit.py fails on unaccounted sound / hidden words |
 | 17 | Click scan flagged a join | natural "-ts" transient 22 ms before the cut in the source | render_audio.py distinguishes steps inside vs outside the crossfade |
 | 18 | "Couldn't find this file" when giving the user a link | markdown link with <...> kept the ">" in the path | Give paths as plain code blocks; request folder access before opening files in the side pane |
 | 19 | Low-bitrate master (61 kbps AAC) | recorder setting | Report it; nothing in the edit can add quality back |
 | 20 | Camera started late / stopped early | user started camera after OBS | Uncovered spans render black (reported); usually the take starts after the camera anyway |
 | 21 | An agent spent a long detour "fixing" a real 8.6 s overlap between two camera clips and patched sync.json | the skill did not say what normal looks like | SKILL.md step 2 lists normal outcomes; overlaps are real and handled by the renderer |
-| 22 | User: "dead spaces, inconsistent cuts, borderline unusable" (Creatorize Suite run) | (a) the app skipped this skill's render + gates and played ~240 cuts live from proxies; (b) 89 s + 2x 57 s playback blocks kept whole | The Suite now runs the full pipeline and loads the rendered files as ONE clip each; edl.py refuses blocks > 25 s without `long_ok` |
+| 22 | User: "dead spaces, inconsistent cuts, borderline unusable" (berat studio run) | (a) the app skipped this skill's render + gates and played ~240 cuts live from proxies; (b) 89 s + 2x 57 s playback blocks kept whole | The Suite now runs the full pipeline and loads the rendered files as ONE clip each; edl.py refuses blocks > 25 s without `long_ok` |
 | 23 | Re-cut after a render could reuse old segment files (same index, different span) | resumable segment cache | segrender.py signs each seg folder with the timeline+sync hash and wipes it when the cut changes |
 | 24 | Gates could be skipped or run on an old render | nothing enforced order/freshness | every gate records into gates.json; finalize.py refuses stale or failing gates |
 | 25 | Envelope lipsync flagged 3 of 141 spans at up to 32 ms; a fresh agent proved them in sync with GCC-PHAT (all within 5.4 ms) - then edited the gate script itself to pass | the envelope method is biased by room reverb on some phonemes | verify_sync.py now re-measures envelope outliers with GCC-PHAT (both halves must agree within 1 ms, within 16.7 ms of the clip's PHAT median); SKILL.md forbids editing the scripts |
@@ -47,6 +47,6 @@
 | Low-poly (1 cam) | 51:15 | 27:30 | 580 / 683 | 16 | 449 | -11..+14 ms |
 | Talking-head demo (1 cam + intro) | 39:07 | 20:04 + 1:03 | 360 / 577 | 24 | 292 + 11 | -9.5..+13.8 ms |
 | Faceless channel (1 cam) | 25:41 | 13:56 | 272 / 338 | 33 | 208 | median 2.4 ms, 95% within 10 ms |
-| Creatorize demo (3 cams, 1 unused) | 64:21 | 13:35 | 245 / 359 | 29 | 186 | +-9..12 ms around clip median |
+| berat demo (3 cams, 1 unused) | 64:21 | 13:35 | 245 / 359 | 29 | 186 | +-9..12 ms around clip median |
 | Three.js demo (6 cams, 1 unused) | 42:16 | 8:46 | 144 / 264 | 14 | 115 | -10.6..+14.3 ms |
 Parakeet: ~22 s ASR per 25 min of audio; per-utterance pass ~0.3 s per utterance (it was 2 s while the aligner model reloaded for every file - fixed in the transcriber, 2026-09-29).

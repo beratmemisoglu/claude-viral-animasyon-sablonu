@@ -1,4 +1,4 @@
-{
+﻿{
   "schema": 1,
   "id": "pose.recon.prone-crawler",
   "uid": "b1ba2a62-d5d3-5b3f-ab3f-196504687173",
@@ -87,7 +87,7 @@
   ],
   "licence": {
     "id": "own",
-    "author": "Creatorize",
+    "author": "berat",
     "source_url": null,
     "credit_text": null
   },

@@ -1,4 +1,4 @@
-# Claude edit errors and usage limits
+﻿# Claude edit errors and usage limits
 keywords: usage limit, limit reached, out of usage, resets at, rate limit, rate-limiting, 429, overloaded, 529, claude is already working, claude is working, press stop, busy, git is not installed, can't revert, cannot be reverted, re-apply, no shots to upgrade, ultraedit, unexpected format
 platforms: both
 
@@ -6,7 +6,7 @@ platforms: both
 > Your Claude usage limit is reached. It resets at ...
 > Your Claude usage limit is reached for now. Try again later, or pick a lighter model in Settings.
 
-What it means: your own Claude plan's limit is used up for now. It is your Claude account's limit, not a Creatorize one.
+What it means: your own Claude plan's limit is used up for now. It is your Claude account's limit, not a berat one.
 
 Fix:
 1. Wait until the time shown, then try again. Edits made before the limit stay listed and can be reverted.

@@ -1,4 +1,4 @@
-// Creatorize Suite engine - Vox-style editorial collage (v1). Everything is procedural Three.js: layered paper,
+﻿// berat studio engine - Vox-style editorial collage (v1). Everything is procedural Three.js: layered paper,
 // cut-outs, printed "photos" (3D subjects rendered to halftone/duotone prints), tactile props, marker annotations,
 // Vox text animators, a camera that never stops moving, cut-the-curve / rack-focus / zoom-through transitions,
 // depth of field, grain, halftone and paper texture in post, and a sound-design event pass (paper, pins, marker,

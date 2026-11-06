@@ -1,4 +1,4 @@
-// Reusable low-poly / voxel models, all faceted palette shading.
+﻿// Reusable low-poly / voxel models, all faceted palette shading.
 import { THREE, C, RAMP, facet, flat, box, vox, rng, GEO, V } from './engine.js';
 
 export function group(...kids) { const g = new THREE.Group(); kids.forEach(k => k && g.add(k)); return g; }
@@ -277,7 +277,7 @@ export function pixelQuad(w, h, drawFn, pw = 64, ph = 64) {
   return m;
 }
 
-// Creatorize Suite: every model instance carries userData.kind, so a click in the editor can say what it hit
+// berat studio: every model instance carries userData.kind, so a click in the editor can say what it hit
 // ("tree", "building" ...). Do the same for project models: g.userData.kind = 'hut'.
 const tagged = (name, f) => (...a) => { const o = f(...a); if (o?.userData && !o.userData.kind) o.userData.kind = name; return o; };
 ps2 = tagged('ps2 console', ps2); memory = tagged('memory grid', memory); disc = tagged('disc', disc); car = tagged('car', car);

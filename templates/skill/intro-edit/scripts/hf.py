@@ -1,4 +1,4 @@
-"""HyperFrames for the intro, with the flags that make it fast and correct on this machine. Run from work/intro:
+﻿"""HyperFrames for the intro, with the flags that make it fast and correct on this machine. Run from work/intro:
     "$CZ_PYTHON" "$SK/hf.py" check                       # lint + runtime + layout gate (0 errors before any render)
     "$CZ_PYTHON" "$SK/hf.py" snapshot 1.2,3.45,7.8       # stills at those seconds -> snapshots/ (look at them)
     "$CZ_PYTHON" "$SK/hf.py" render                      # starts the render in its own process and waits up to ~9 min
@@ -18,7 +18,7 @@ def cli():
     hf = shutil.which('hyperframes')
     if hf: return [hf]
     npx = shutil.which('npx')
-    if not npx: sys.exit('NEEDS NODE: HyperFrames runs on Node.js, which is not installed. Tell the user to run the Creatorize installer again (it adds Node.js).')
+    if not npx: sys.exit('NEEDS NODE: HyperFrames runs on Node.js, which is not installed. Tell the user to run the berat installer again (it adds Node.js).')
     return [npx, '--yes', 'hyperframes@0.8']
 
 

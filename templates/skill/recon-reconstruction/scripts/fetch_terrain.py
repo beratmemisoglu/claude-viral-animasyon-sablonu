@@ -1,4 +1,4 @@
-# python tools/fetch_terrain.py <region> <lat_min> <lon_min> <lat_max> <lon_max> [zoom]
+﻿# python tools/fetch_terrain.py <region> <lat_min> <lon_min> <lat_max> <lon_max> [zoom]
 # Real elevation from the AWS Terrain Tiles open dataset (Terrarium PNG: h = R*256 + G + B/256 - 32768 metres; sources
 # SRTM / GMTED / ETOPO and others, see https://github.com/tilezen/joerd/blob/master/docs/attribution.md).
 # Writes data/<region>/elev.npz: { h: float32 grid (rows = north->south), lat0, lat1, lon0, lon1 }.
@@ -14,7 +14,7 @@ W = (tx1 - tx0 + 1) * 256; H = (ty1 - ty0 + 1) * 256; mosaic = np.zeros((H, W), 
 for ty in range(ty0, ty1 + 1):
     for tx in range(tx0, tx1 + 1):
         url = f'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{tx}/{ty}.png'
-        im = np.array(Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'CreatorizeResearch/1.0'})).read())).convert('RGB')).astype(np.float32)
+        im = np.array(Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'beratResearch/1.0'})).read())).convert('RGB')).astype(np.float32)
         mosaic[(ty - ty0) * 256:(ty - ty0 + 1) * 256, (tx - tx0) * 256:(tx - tx0 + 1) * 256] = im[..., 0] * 256 + im[..., 1] + im[..., 2] / 256 - 32768
 # crop to the bbox (pixel coords inside the mosaic)
 px0, px1 = int((x0 - tx0) * 256), int((x1 - tx0) * 256); py0, py1 = int((y0 - ty0) * 256), int((y1 - ty0) * 256)
